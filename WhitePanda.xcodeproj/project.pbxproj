@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74AD43302BBAD49400AA7F5E /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AD432F2BBAD49400AA7F5E /* CounterView.swift */; };
 		74B9865A2BBACC510072E8F1 /* WhitePandaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986592BBACC510072E8F1 /* WhitePandaApp.swift */; };
 		74B9865C2BBACC510072E8F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9865B2BBACC510072E8F1 /* ContentView.swift */; };
 		74B9865E2BBACC530072E8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B9865D2BBACC530072E8F1 /* Assets.xcassets */; };
@@ -16,7 +17,6 @@
 		74B986772BBACC530072E8F1 /* WhitePandaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986762BBACC530072E8F1 /* WhitePandaUITestsLaunchTests.swift */; };
 		74B9867D2BBACC530072E8F1 /* WhitePanda Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 74B9867C2BBACC530072E8F1 /* WhitePanda Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		74B986822BBACC530072E8F1 /* WhitePandaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986812BBACC530072E8F1 /* WhitePandaApp.swift */; };
-		74B986842BBACC530072E8F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986832BBACC530072E8F1 /* ContentView.swift */; };
 		74B986862BBACC540072E8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B986852BBACC540072E8F1 /* Assets.xcassets */; };
 		74B986892BBACC540072E8F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B986882BBACC540072E8F1 /* Preview Assets.xcassets */; };
 		74B986932BBACC540072E8F1 /* WhitePanda_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986922BBACC540072E8F1 /* WhitePanda_Watch_AppTests.swift */; };
@@ -78,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		74AD432F2BBAD49400AA7F5E /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		74B986562BBACC510072E8F1 /* WhitePanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhitePanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B986592BBACC510072E8F1 /* WhitePandaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaApp.swift; sourceTree = "<group>"; };
 		74B9865B2BBACC510072E8F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,7 +91,6 @@
 		74B986762BBACC530072E8F1 /* WhitePandaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		74B9867C2BBACC530072E8F1 /* WhitePanda Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhitePanda Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B986812BBACC530072E8F1 /* WhitePandaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaApp.swift; sourceTree = "<group>"; };
-		74B986832BBACC530072E8F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74B986852BBACC540072E8F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B986882BBACC540072E8F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74B9868E2BBACC540072E8F1 /* WhitePanda Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WhitePanda Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +147,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74AD432D2BBAD47300AA7F5E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				74AD432E2BBAD48500AA7F5E /* Counter */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		74AD432E2BBAD48500AA7F5E /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				74AD432F2BBAD49400AA7F5E /* CounterView.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
 		74B9864D2BBACC510072E8F1 = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				74B986812BBACC530072E8F1 /* WhitePandaApp.swift */,
-				74B986832BBACC530072E8F1 /* ContentView.swift */,
+				74AD432D2BBAD47300AA7F5E /* Scenes */,
 				74B986852BBACC540072E8F1 /* Assets.xcassets */,
 				74B986872BBACC540072E8F1 /* Preview Content */,
 			);
@@ -499,8 +515,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B986842BBACC530072E8F1 /* ContentView.swift in Sources */,
 				74B986822BBACC530072E8F1 /* WhitePandaApp.swift in Sources */,
+				74AD43302BBAD49400AA7F5E /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
