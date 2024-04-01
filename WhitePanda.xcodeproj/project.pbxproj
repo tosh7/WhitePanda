@@ -22,6 +22,7 @@
 		74B986932BBACC540072E8F1 /* WhitePanda_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986922BBACC540072E8F1 /* WhitePanda_Watch_AppTests.swift */; };
 		74B9869D2BBACC540072E8F1 /* WhitePanda_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9869C2BBACC540072E8F1 /* WhitePanda_Watch_AppUITests.swift */; };
 		74B9869F2BBACC540072E8F1 /* WhitePanda_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9869E2BBACC540072E8F1 /* WhitePanda_Watch_AppUITestsLaunchTests.swift */; };
+		74B986B72BBAD12C0072E8F1 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 74B986B62BBAD12C0072E8F1 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B986B72BBAD12C0072E8F1 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +316,9 @@
 			dependencies = (
 			);
 			name = "WhitePanda Watch App";
+			packageProductDependencies = (
+				74B986B62BBAD12C0072E8F1 /* ComposableArchitecture */,
+			);
 			productName = "WhitePanda Watch App";
 			productReference = 74B9867C2BBACC530072E8F1 /* WhitePanda Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -397,6 +402,9 @@
 				Base,
 			);
 			mainGroup = 74B9864D2BBACC510072E8F1;
+			packageReferences = (
+				74B986B52BBAD12C0072E8F1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 74B986572BBACC510072E8F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1021,6 +1029,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74B986B52BBAD12C0072E8F1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74B986B62BBAD12C0072E8F1 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B986B52BBAD12C0072E8F1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74B9864E2BBACC510072E8F1 /* Project object */;
 }
