@@ -7,62 +7,135 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74B143752BBAC97400D81E09 /* WhitePandaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B143742BBAC97400D81E09 /* WhitePandaApp.swift */; };
-		74B143772BBAC97400D81E09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B143762BBAC97400D81E09 /* ContentView.swift */; };
-		74B143792BBAC97700D81E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B143782BBAC97700D81E09 /* Assets.xcassets */; };
-		74B1437D2BBAC97700D81E09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B1437C2BBAC97700D81E09 /* Preview Assets.xcassets */; };
-		74B143872BBAC97700D81E09 /* WhitePandaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B143862BBAC97700D81E09 /* WhitePandaTests.swift */; };
-		74B143912BBAC97700D81E09 /* WhitePandaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B143902BBAC97700D81E09 /* WhitePandaUITests.swift */; };
-		74B143932BBAC97700D81E09 /* WhitePandaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B143922BBAC97700D81E09 /* WhitePandaUITestsLaunchTests.swift */; };
+		74B9865A2BBACC510072E8F1 /* WhitePandaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986592BBACC510072E8F1 /* WhitePandaApp.swift */; };
+		74B9865C2BBACC510072E8F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9865B2BBACC510072E8F1 /* ContentView.swift */; };
+		74B9865E2BBACC530072E8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B9865D2BBACC530072E8F1 /* Assets.xcassets */; };
+		74B986612BBACC530072E8F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B986602BBACC530072E8F1 /* Preview Assets.xcassets */; };
+		74B9866B2BBACC530072E8F1 /* WhitePandaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9866A2BBACC530072E8F1 /* WhitePandaTests.swift */; };
+		74B986752BBACC530072E8F1 /* WhitePandaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986742BBACC530072E8F1 /* WhitePandaUITests.swift */; };
+		74B986772BBACC530072E8F1 /* WhitePandaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986762BBACC530072E8F1 /* WhitePandaUITestsLaunchTests.swift */; };
+		74B9867D2BBACC530072E8F1 /* WhitePanda Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 74B9867C2BBACC530072E8F1 /* WhitePanda Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		74B986822BBACC530072E8F1 /* WhitePandaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986812BBACC530072E8F1 /* WhitePandaApp.swift */; };
+		74B986842BBACC530072E8F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986832BBACC530072E8F1 /* ContentView.swift */; };
+		74B986862BBACC540072E8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B986852BBACC540072E8F1 /* Assets.xcassets */; };
+		74B986892BBACC540072E8F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B986882BBACC540072E8F1 /* Preview Assets.xcassets */; };
+		74B986932BBACC540072E8F1 /* WhitePanda_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986922BBACC540072E8F1 /* WhitePanda_Watch_AppTests.swift */; };
+		74B9869D2BBACC540072E8F1 /* WhitePanda_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9869C2BBACC540072E8F1 /* WhitePanda_Watch_AppUITests.swift */; };
+		74B9869F2BBACC540072E8F1 /* WhitePanda_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9869E2BBACC540072E8F1 /* WhitePanda_Watch_AppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		74B143832BBAC97700D81E09 /* PBXContainerItemProxy */ = {
+		74B986672BBACC530072E8F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 74B143692BBAC97400D81E09 /* Project object */;
+			containerPortal = 74B9864E2BBACC510072E8F1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 74B143702BBAC97400D81E09;
+			remoteGlobalIDString = 74B986552BBACC510072E8F1;
 			remoteInfo = WhitePanda;
 		};
-		74B1438D2BBAC97700D81E09 /* PBXContainerItemProxy */ = {
+		74B986712BBACC530072E8F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 74B143692BBAC97400D81E09 /* Project object */;
+			containerPortal = 74B9864E2BBACC510072E8F1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 74B143702BBAC97400D81E09;
+			remoteGlobalIDString = 74B986552BBACC510072E8F1;
 			remoteInfo = WhitePanda;
+		};
+		74B9867E2BBACC530072E8F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74B9864E2BBACC510072E8F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74B9867B2BBACC530072E8F1;
+			remoteInfo = "WhitePanda Watch App";
+		};
+		74B9868F2BBACC540072E8F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74B9864E2BBACC510072E8F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74B9867B2BBACC530072E8F1;
+			remoteInfo = "WhitePanda Watch App";
+		};
+		74B986992BBACC540072E8F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74B9864E2BBACC510072E8F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74B9867B2BBACC530072E8F1;
+			remoteInfo = "WhitePanda Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		74B986A52BBACC540072E8F1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				74B9867D2BBACC530072E8F1 /* WhitePanda Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		74B143712BBAC97400D81E09 /* WhitePanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhitePanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		74B143742BBAC97400D81E09 /* WhitePandaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaApp.swift; sourceTree = "<group>"; };
-		74B143762BBAC97400D81E09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		74B143782BBAC97700D81E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74B1437A2BBAC97700D81E09 /* WhitePanda.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhitePanda.entitlements; sourceTree = "<group>"; };
-		74B1437C2BBAC97700D81E09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		74B143822BBAC97700D81E09 /* WhitePandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitePandaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74B143862BBAC97700D81E09 /* WhitePandaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaTests.swift; sourceTree = "<group>"; };
-		74B1438C2BBAC97700D81E09 /* WhitePandaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitePandaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74B143902BBAC97700D81E09 /* WhitePandaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaUITests.swift; sourceTree = "<group>"; };
-		74B143922BBAC97700D81E09 /* WhitePandaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		74B986562BBACC510072E8F1 /* WhitePanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhitePanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B986592BBACC510072E8F1 /* WhitePandaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaApp.swift; sourceTree = "<group>"; };
+		74B9865B2BBACC510072E8F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74B9865D2BBACC530072E8F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74B986602BBACC530072E8F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74B986662BBACC530072E8F1 /* WhitePandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitePandaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B9866A2BBACC530072E8F1 /* WhitePandaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaTests.swift; sourceTree = "<group>"; };
+		74B986702BBACC530072E8F1 /* WhitePandaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitePandaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B986742BBACC530072E8F1 /* WhitePandaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaUITests.swift; sourceTree = "<group>"; };
+		74B986762BBACC530072E8F1 /* WhitePandaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		74B9867C2BBACC530072E8F1 /* WhitePanda Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhitePanda Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B986812BBACC530072E8F1 /* WhitePandaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaApp.swift; sourceTree = "<group>"; };
+		74B986832BBACC530072E8F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74B986852BBACC540072E8F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74B986882BBACC540072E8F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74B9868E2BBACC540072E8F1 /* WhitePanda Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WhitePanda Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B986922BBACC540072E8F1 /* WhitePanda_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePanda_Watch_AppTests.swift; sourceTree = "<group>"; };
+		74B986982BBACC540072E8F1 /* WhitePanda Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WhitePanda Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B9869C2BBACC540072E8F1 /* WhitePanda_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePanda_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		74B9869E2BBACC540072E8F1 /* WhitePanda_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePanda_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		74B1436E2BBAC97400D81E09 /* Frameworks */ = {
+		74B986532BBACC510072E8F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74B1437F2BBAC97700D81E09 /* Frameworks */ = {
+		74B986632BBACC530072E8F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74B143892BBAC97700D81E09 /* Frameworks */ = {
+		74B9866D2BBACC530072E8F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B986792BBACC530072E8F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B9868B2BBACC540072E8F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B986952BBACC540072E8F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,143 +145,250 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		74B143682BBAC97400D81E09 = {
+		74B9864D2BBACC510072E8F1 = {
 			isa = PBXGroup;
 			children = (
-				74B143732BBAC97400D81E09 /* WhitePanda */,
-				74B143852BBAC97700D81E09 /* WhitePandaTests */,
-				74B1438F2BBAC97700D81E09 /* WhitePandaUITests */,
-				74B143722BBAC97400D81E09 /* Products */,
+				74B986582BBACC510072E8F1 /* WhitePanda */,
+				74B986692BBACC530072E8F1 /* WhitePandaTests */,
+				74B986732BBACC530072E8F1 /* WhitePandaUITests */,
+				74B986802BBACC530072E8F1 /* WhitePanda Watch App */,
+				74B986912BBACC540072E8F1 /* WhitePanda Watch AppTests */,
+				74B9869B2BBACC540072E8F1 /* WhitePanda Watch AppUITests */,
+				74B986572BBACC510072E8F1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		74B143722BBAC97400D81E09 /* Products */ = {
+		74B986572BBACC510072E8F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74B143712BBAC97400D81E09 /* WhitePanda.app */,
-				74B143822BBAC97700D81E09 /* WhitePandaTests.xctest */,
-				74B1438C2BBAC97700D81E09 /* WhitePandaUITests.xctest */,
+				74B986562BBACC510072E8F1 /* WhitePanda.app */,
+				74B986662BBACC530072E8F1 /* WhitePandaTests.xctest */,
+				74B986702BBACC530072E8F1 /* WhitePandaUITests.xctest */,
+				74B9867C2BBACC530072E8F1 /* WhitePanda Watch App.app */,
+				74B9868E2BBACC540072E8F1 /* WhitePanda Watch AppTests.xctest */,
+				74B986982BBACC540072E8F1 /* WhitePanda Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		74B143732BBAC97400D81E09 /* WhitePanda */ = {
+		74B986582BBACC510072E8F1 /* WhitePanda */ = {
 			isa = PBXGroup;
 			children = (
-				74B143742BBAC97400D81E09 /* WhitePandaApp.swift */,
-				74B143762BBAC97400D81E09 /* ContentView.swift */,
-				74B143782BBAC97700D81E09 /* Assets.xcassets */,
-				74B1437A2BBAC97700D81E09 /* WhitePanda.entitlements */,
-				74B1437B2BBAC97700D81E09 /* Preview Content */,
+				74B986592BBACC510072E8F1 /* WhitePandaApp.swift */,
+				74B9865B2BBACC510072E8F1 /* ContentView.swift */,
+				74B9865D2BBACC530072E8F1 /* Assets.xcassets */,
+				74B9865F2BBACC530072E8F1 /* Preview Content */,
 			);
 			path = WhitePanda;
 			sourceTree = "<group>";
 		};
-		74B1437B2BBAC97700D81E09 /* Preview Content */ = {
+		74B9865F2BBACC530072E8F1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				74B1437C2BBAC97700D81E09 /* Preview Assets.xcassets */,
+				74B986602BBACC530072E8F1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		74B143852BBAC97700D81E09 /* WhitePandaTests */ = {
+		74B986692BBACC530072E8F1 /* WhitePandaTests */ = {
 			isa = PBXGroup;
 			children = (
-				74B143862BBAC97700D81E09 /* WhitePandaTests.swift */,
+				74B9866A2BBACC530072E8F1 /* WhitePandaTests.swift */,
 			);
 			path = WhitePandaTests;
 			sourceTree = "<group>";
 		};
-		74B1438F2BBAC97700D81E09 /* WhitePandaUITests */ = {
+		74B986732BBACC530072E8F1 /* WhitePandaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				74B143902BBAC97700D81E09 /* WhitePandaUITests.swift */,
-				74B143922BBAC97700D81E09 /* WhitePandaUITestsLaunchTests.swift */,
+				74B986742BBACC530072E8F1 /* WhitePandaUITests.swift */,
+				74B986762BBACC530072E8F1 /* WhitePandaUITestsLaunchTests.swift */,
 			);
 			path = WhitePandaUITests;
+			sourceTree = "<group>";
+		};
+		74B986802BBACC530072E8F1 /* WhitePanda Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				74B986812BBACC530072E8F1 /* WhitePandaApp.swift */,
+				74B986832BBACC530072E8F1 /* ContentView.swift */,
+				74B986852BBACC540072E8F1 /* Assets.xcassets */,
+				74B986872BBACC540072E8F1 /* Preview Content */,
+			);
+			path = "WhitePanda Watch App";
+			sourceTree = "<group>";
+		};
+		74B986872BBACC540072E8F1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				74B986882BBACC540072E8F1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74B986912BBACC540072E8F1 /* WhitePanda Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				74B986922BBACC540072E8F1 /* WhitePanda_Watch_AppTests.swift */,
+			);
+			path = "WhitePanda Watch AppTests";
+			sourceTree = "<group>";
+		};
+		74B9869B2BBACC540072E8F1 /* WhitePanda Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74B9869C2BBACC540072E8F1 /* WhitePanda_Watch_AppUITests.swift */,
+				74B9869E2BBACC540072E8F1 /* WhitePanda_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "WhitePanda Watch AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		74B143702BBAC97400D81E09 /* WhitePanda */ = {
+		74B986552BBACC510072E8F1 /* WhitePanda */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74B143962BBAC97700D81E09 /* Build configuration list for PBXNativeTarget "WhitePanda" */;
+			buildConfigurationList = 74B986A62BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePanda" */;
 			buildPhases = (
-				74B1436D2BBAC97400D81E09 /* Sources */,
-				74B1436E2BBAC97400D81E09 /* Frameworks */,
-				74B1436F2BBAC97400D81E09 /* Resources */,
+				74B986522BBACC510072E8F1 /* Sources */,
+				74B986532BBACC510072E8F1 /* Frameworks */,
+				74B986542BBACC510072E8F1 /* Resources */,
+				74B986A52BBACC540072E8F1 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				74B9867F2BBACC530072E8F1 /* PBXTargetDependency */,
 			);
 			name = WhitePanda;
 			productName = WhitePanda;
-			productReference = 74B143712BBAC97400D81E09 /* WhitePanda.app */;
+			productReference = 74B986562BBACC510072E8F1 /* WhitePanda.app */;
 			productType = "com.apple.product-type.application";
 		};
-		74B143812BBAC97700D81E09 /* WhitePandaTests */ = {
+		74B986652BBACC530072E8F1 /* WhitePandaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74B143992BBAC97700D81E09 /* Build configuration list for PBXNativeTarget "WhitePandaTests" */;
+			buildConfigurationList = 74B986A92BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePandaTests" */;
 			buildPhases = (
-				74B1437E2BBAC97700D81E09 /* Sources */,
-				74B1437F2BBAC97700D81E09 /* Frameworks */,
-				74B143802BBAC97700D81E09 /* Resources */,
+				74B986622BBACC530072E8F1 /* Sources */,
+				74B986632BBACC530072E8F1 /* Frameworks */,
+				74B986642BBACC530072E8F1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				74B143842BBAC97700D81E09 /* PBXTargetDependency */,
+				74B986682BBACC530072E8F1 /* PBXTargetDependency */,
 			);
 			name = WhitePandaTests;
 			productName = WhitePandaTests;
-			productReference = 74B143822BBAC97700D81E09 /* WhitePandaTests.xctest */;
+			productReference = 74B986662BBACC530072E8F1 /* WhitePandaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		74B1438B2BBAC97700D81E09 /* WhitePandaUITests */ = {
+		74B9866F2BBACC530072E8F1 /* WhitePandaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74B1439C2BBAC97700D81E09 /* Build configuration list for PBXNativeTarget "WhitePandaUITests" */;
+			buildConfigurationList = 74B986AC2BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePandaUITests" */;
 			buildPhases = (
-				74B143882BBAC97700D81E09 /* Sources */,
-				74B143892BBAC97700D81E09 /* Frameworks */,
-				74B1438A2BBAC97700D81E09 /* Resources */,
+				74B9866C2BBACC530072E8F1 /* Sources */,
+				74B9866D2BBACC530072E8F1 /* Frameworks */,
+				74B9866E2BBACC530072E8F1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				74B1438E2BBAC97700D81E09 /* PBXTargetDependency */,
+				74B986722BBACC530072E8F1 /* PBXTargetDependency */,
 			);
 			name = WhitePandaUITests;
 			productName = WhitePandaUITests;
-			productReference = 74B1438C2BBAC97700D81E09 /* WhitePandaUITests.xctest */;
+			productReference = 74B986702BBACC530072E8F1 /* WhitePandaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		74B9867B2BBACC530072E8F1 /* WhitePanda Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74B986A22BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePanda Watch App" */;
+			buildPhases = (
+				74B986782BBACC530072E8F1 /* Sources */,
+				74B986792BBACC530072E8F1 /* Frameworks */,
+				74B9867A2BBACC530072E8F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WhitePanda Watch App";
+			productName = "WhitePanda Watch App";
+			productReference = 74B9867C2BBACC530072E8F1 /* WhitePanda Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74B9868D2BBACC540072E8F1 /* WhitePanda Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74B986AF2BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePanda Watch AppTests" */;
+			buildPhases = (
+				74B9868A2BBACC540072E8F1 /* Sources */,
+				74B9868B2BBACC540072E8F1 /* Frameworks */,
+				74B9868C2BBACC540072E8F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74B986902BBACC540072E8F1 /* PBXTargetDependency */,
+			);
+			name = "WhitePanda Watch AppTests";
+			productName = "WhitePanda Watch AppTests";
+			productReference = 74B9868E2BBACC540072E8F1 /* WhitePanda Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		74B986972BBACC540072E8F1 /* WhitePanda Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74B986B22BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePanda Watch AppUITests" */;
+			buildPhases = (
+				74B986942BBACC540072E8F1 /* Sources */,
+				74B986952BBACC540072E8F1 /* Frameworks */,
+				74B986962BBACC540072E8F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74B9869A2BBACC540072E8F1 /* PBXTargetDependency */,
+			);
+			name = "WhitePanda Watch AppUITests";
+			productName = "WhitePanda Watch AppUITests";
+			productReference = 74B986982BBACC540072E8F1 /* WhitePanda Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		74B143692BBAC97400D81E09 /* Project object */ = {
+		74B9864E2BBACC510072E8F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					74B143702BBAC97400D81E09 = {
+					74B986552BBACC510072E8F1 = {
 						CreatedOnToolsVersion = 15.3;
 					};
-					74B143812BBAC97700D81E09 = {
+					74B986652BBACC530072E8F1 = {
 						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 74B143702BBAC97400D81E09;
+						TestTargetID = 74B986552BBACC510072E8F1;
 					};
-					74B1438B2BBAC97700D81E09 = {
+					74B9866F2BBACC530072E8F1 = {
 						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 74B143702BBAC97400D81E09;
+						TestTargetID = 74B986552BBACC510072E8F1;
+					};
+					74B9867B2BBACC530072E8F1 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					74B9868D2BBACC540072E8F1 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 74B9867B2BBACC530072E8F1;
+					};
+					74B986972BBACC540072E8F1 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 74B9867B2BBACC530072E8F1;
 					};
 				};
 			};
-			buildConfigurationList = 74B1436C2BBAC97400D81E09 /* Build configuration list for PBXProject "WhitePanda" */;
+			buildConfigurationList = 74B986512BBACC510072E8F1 /* Build configuration list for PBXProject "WhitePanda" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,36 +396,62 @@
 				en,
 				Base,
 			);
-			mainGroup = 74B143682BBAC97400D81E09;
-			productRefGroup = 74B143722BBAC97400D81E09 /* Products */;
+			mainGroup = 74B9864D2BBACC510072E8F1;
+			productRefGroup = 74B986572BBACC510072E8F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74B143702BBAC97400D81E09 /* WhitePanda */,
-				74B143812BBAC97700D81E09 /* WhitePandaTests */,
-				74B1438B2BBAC97700D81E09 /* WhitePandaUITests */,
+				74B986552BBACC510072E8F1 /* WhitePanda */,
+				74B986652BBACC530072E8F1 /* WhitePandaTests */,
+				74B9866F2BBACC530072E8F1 /* WhitePandaUITests */,
+				74B9867B2BBACC530072E8F1 /* WhitePanda Watch App */,
+				74B9868D2BBACC540072E8F1 /* WhitePanda Watch AppTests */,
+				74B986972BBACC540072E8F1 /* WhitePanda Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		74B1436F2BBAC97400D81E09 /* Resources */ = {
+		74B986542BBACC510072E8F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B1437D2BBAC97700D81E09 /* Preview Assets.xcassets in Resources */,
-				74B143792BBAC97700D81E09 /* Assets.xcassets in Resources */,
+				74B986612BBACC530072E8F1 /* Preview Assets.xcassets in Resources */,
+				74B9865E2BBACC530072E8F1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74B143802BBAC97700D81E09 /* Resources */ = {
+		74B986642BBACC530072E8F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74B1438A2BBAC97700D81E09 /* Resources */ = {
+		74B9866E2BBACC530072E8F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B9867A2BBACC530072E8F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74B986892BBACC540072E8F1 /* Preview Assets.xcassets in Resources */,
+				74B986862BBACC540072E8F1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B9868C2BBACC540072E8F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B986962BBACC540072E8F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,49 +461,90 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		74B1436D2BBAC97400D81E09 /* Sources */ = {
+		74B986522BBACC510072E8F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B143772BBAC97400D81E09 /* ContentView.swift in Sources */,
-				74B143752BBAC97400D81E09 /* WhitePandaApp.swift in Sources */,
+				74B9865C2BBACC510072E8F1 /* ContentView.swift in Sources */,
+				74B9865A2BBACC510072E8F1 /* WhitePandaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74B1437E2BBAC97700D81E09 /* Sources */ = {
+		74B986622BBACC530072E8F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B143872BBAC97700D81E09 /* WhitePandaTests.swift in Sources */,
+				74B9866B2BBACC530072E8F1 /* WhitePandaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74B143882BBAC97700D81E09 /* Sources */ = {
+		74B9866C2BBACC530072E8F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B143912BBAC97700D81E09 /* WhitePandaUITests.swift in Sources */,
-				74B143932BBAC97700D81E09 /* WhitePandaUITestsLaunchTests.swift in Sources */,
+				74B986752BBACC530072E8F1 /* WhitePandaUITests.swift in Sources */,
+				74B986772BBACC530072E8F1 /* WhitePandaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B986782BBACC530072E8F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74B986842BBACC530072E8F1 /* ContentView.swift in Sources */,
+				74B986822BBACC530072E8F1 /* WhitePandaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B9868A2BBACC540072E8F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74B986932BBACC540072E8F1 /* WhitePanda_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B986942BBACC540072E8F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74B9869D2BBACC540072E8F1 /* WhitePanda_Watch_AppUITests.swift in Sources */,
+				74B9869F2BBACC540072E8F1 /* WhitePanda_Watch_AppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		74B143842BBAC97700D81E09 /* PBXTargetDependency */ = {
+		74B986682BBACC530072E8F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 74B143702BBAC97400D81E09 /* WhitePanda */;
-			targetProxy = 74B143832BBAC97700D81E09 /* PBXContainerItemProxy */;
+			target = 74B986552BBACC510072E8F1 /* WhitePanda */;
+			targetProxy = 74B986672BBACC530072E8F1 /* PBXContainerItemProxy */;
 		};
-		74B1438E2BBAC97700D81E09 /* PBXTargetDependency */ = {
+		74B986722BBACC530072E8F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 74B143702BBAC97400D81E09 /* WhitePanda */;
-			targetProxy = 74B1438D2BBAC97700D81E09 /* PBXContainerItemProxy */;
+			target = 74B986552BBACC510072E8F1 /* WhitePanda */;
+			targetProxy = 74B986712BBACC530072E8F1 /* PBXContainerItemProxy */;
+		};
+		74B9867F2BBACC530072E8F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74B9867B2BBACC530072E8F1 /* WhitePanda Watch App */;
+			targetProxy = 74B9867E2BBACC530072E8F1 /* PBXContainerItemProxy */;
+		};
+		74B986902BBACC540072E8F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74B9867B2BBACC530072E8F1 /* WhitePanda Watch App */;
+			targetProxy = 74B9868F2BBACC540072E8F1 /* PBXContainerItemProxy */;
+		};
+		74B9869A2BBACC540072E8F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74B9867B2BBACC530072E8F1 /* WhitePanda Watch App */;
+			targetProxy = 74B986992BBACC540072E8F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		74B143942BBAC97700D81E09 /* Debug */ = {
+		74B986A02BBACC540072E8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -358,7 +605,7 @@
 			};
 			name = Debug;
 		};
-		74B143952BBAC97700D81E09 /* Release */ = {
+		74B986A12BBACC540072E8F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -411,83 +658,135 @@
 			};
 			name = Release;
 		};
-		74B143972BBAC97700D81E09 /* Debug */ = {
+		74B986A32BBACC540072E8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WhitePanda/WhitePanda.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WhitePanda Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 56787CM63P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WhitePanda;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tosh7.WhitePanda;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tosh7.WhitePanda.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		74B986A42BBACC540072E8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WhitePanda Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 56787CM63P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WhitePanda;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tosh7.WhitePanda;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tosh7.WhitePanda.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		74B986A72BBACC540072E8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WhitePanda/Preview Content\"";
 				DEVELOPMENT_TEAM = 56787CM63P;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_CFBundleDisplayName = WhitePanda;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosh7.WhitePanda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		74B143982BBAC97700D81E09 /* Release */ = {
+		74B986A82BBACC540072E8F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WhitePanda/WhitePanda.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WhitePanda/Preview Content\"";
 				DEVELOPMENT_TEAM = 56787CM63P;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_CFBundleDisplayName = WhitePanda;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosh7.WhitePanda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		74B1439A2BBAC97700D81E09 /* Debug */ = {
+		74B986AA2BBACC540072E8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -497,12 +796,10 @@
 				DEVELOPMENT_TEAM = 56787CM63P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosh7.WhitePandaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,7 +807,7 @@
 			};
 			name = Debug;
 		};
-		74B1439B2BBAC97700D81E09 /* Release */ = {
+		74B986AB2BBACC540072E8F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -520,20 +817,19 @@
 				DEVELOPMENT_TEAM = 56787CM63P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosh7.WhitePandaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhitePanda.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhitePanda";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		74B1439D2BBAC97700D81E09 /* Debug */ = {
+		74B986AD2BBACC540072E8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -542,12 +838,10 @@
 				DEVELOPMENT_TEAM = 56787CM63P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosh7.WhitePandaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -555,7 +849,7 @@
 			};
 			name = Debug;
 		};
-		74B1439E2BBAC97700D81E09 /* Release */ = {
+		74B986AE2BBACC540072E8F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -564,59 +858,169 @@
 				DEVELOPMENT_TEAM = 56787CM63P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosh7.WhitePandaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = WhitePanda;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74B986B02BBACC540072E8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tosh7.WhitePanda-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhitePanda Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhitePanda Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		74B986B12BBACC540072E8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tosh7.WhitePanda-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhitePanda Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhitePanda Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		74B986B32BBACC540072E8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tosh7.WhitePanda-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WhitePanda Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		74B986B42BBACC540072E8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tosh7.WhitePanda-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WhitePanda Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74B1436C2BBAC97400D81E09 /* Build configuration list for PBXProject "WhitePanda" */ = {
+		74B986512BBACC510072E8F1 /* Build configuration list for PBXProject "WhitePanda" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74B143942BBAC97700D81E09 /* Debug */,
-				74B143952BBAC97700D81E09 /* Release */,
+				74B986A02BBACC540072E8F1 /* Debug */,
+				74B986A12BBACC540072E8F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74B143962BBAC97700D81E09 /* Build configuration list for PBXNativeTarget "WhitePanda" */ = {
+		74B986A22BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePanda Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74B143972BBAC97700D81E09 /* Debug */,
-				74B143982BBAC97700D81E09 /* Release */,
+				74B986A32BBACC540072E8F1 /* Debug */,
+				74B986A42BBACC540072E8F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74B143992BBAC97700D81E09 /* Build configuration list for PBXNativeTarget "WhitePandaTests" */ = {
+		74B986A62BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePanda" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74B1439A2BBAC97700D81E09 /* Debug */,
-				74B1439B2BBAC97700D81E09 /* Release */,
+				74B986A72BBACC540072E8F1 /* Debug */,
+				74B986A82BBACC540072E8F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74B1439C2BBAC97700D81E09 /* Build configuration list for PBXNativeTarget "WhitePandaUITests" */ = {
+		74B986A92BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePandaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74B1439D2BBAC97700D81E09 /* Debug */,
-				74B1439E2BBAC97700D81E09 /* Release */,
+				74B986AA2BBACC540072E8F1 /* Debug */,
+				74B986AB2BBACC540072E8F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74B986AC2BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePandaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74B986AD2BBACC540072E8F1 /* Debug */,
+				74B986AE2BBACC540072E8F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74B986AF2BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePanda Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74B986B02BBACC540072E8F1 /* Debug */,
+				74B986B12BBACC540072E8F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74B986B22BBACC540072E8F1 /* Build configuration list for PBXNativeTarget "WhitePanda Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74B986B32BBACC540072E8F1 /* Debug */,
+				74B986B42BBACC540072E8F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 74B143692BBAC97400D81E09 /* Project object */;
+	rootObject = 74B9864E2BBACC510072E8F1 /* Project object */;
 }
