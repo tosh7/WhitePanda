@@ -6,13 +6,47 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct CounterView: View {
+
+    let store: StoreOf<Counter>
+
     var body: some View {
-        Text("Now Count")
+        VStack {
+            Text("\(store.count)")
+
+            Spacer()
+
+            VStack {
+                Button(action: {
+                    store.send(.incrementButtonTapped)
+                }, label: {
+                    Text("+")
+                })
+
+                HStack {
+                    Button(action: {
+                        store.send(.decrementButtonTapped)
+                    }, label: {
+                        Text("-")
+                    })
+
+                    Button(action: {
+                        store.send(.resetButtonTapped)
+                    }, label: {
+                        Text("Reset")
+                    })
+                }
+            }
+        }
+
     }
 }
 
 #Preview {
-    CounterView()
+    CounterView(
+        store: Store(initialState: Counter.State()) {
+            Counter()
+        })
 }

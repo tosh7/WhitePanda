@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct WhitePanda_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            CounterView()
+            CounterView(
+                store: Store(initialState: Counter.State()) {
+                    Counter()
+                }
+            )
         }
     }
 }
