@@ -13,7 +13,6 @@
 		7481502F2BBAE61000C2EDB5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7481502E2BBAE61000C2EDB5 /* ComposableArchitecture */; };
 		74AD43302BBAD49400AA7F5E /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AD432F2BBAD49400AA7F5E /* CounterView.swift */; };
 		74B9865A2BBACC510072E8F1 /* WhitePandaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986592BBACC510072E8F1 /* WhitePandaApp.swift */; };
-		74B9865C2BBACC510072E8F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9865B2BBACC510072E8F1 /* ContentView.swift */; };
 		74B9865E2BBACC530072E8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B9865D2BBACC530072E8F1 /* Assets.xcassets */; };
 		74B986612BBACC530072E8F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B986602BBACC530072E8F1 /* Preview Assets.xcassets */; };
 		74B9866B2BBACC530072E8F1 /* WhitePandaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9866A2BBACC530072E8F1 /* WhitePandaTests.swift */; };
@@ -88,7 +87,6 @@
 		74AD432F2BBAD49400AA7F5E /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		74B986562BBACC510072E8F1 /* WhitePanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhitePanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B986592BBACC510072E8F1 /* WhitePandaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaApp.swift; sourceTree = "<group>"; };
-		74B9865B2BBACC510072E8F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74B9865D2BBACC530072E8F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B986602BBACC530072E8F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74B986662BBACC530072E8F1 /* WhitePandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitePandaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				74B986592BBACC510072E8F1 /* WhitePandaApp.swift */,
-				74B9865B2BBACC510072E8F1 /* ContentView.swift */,
 				748150272BBAE4E600C2EDB5 /* Scenes */,
 				74B9865D2BBACC530072E8F1 /* Assets.xcassets */,
 				74B9865F2BBACC530072E8F1 /* Preview Content */,
@@ -528,7 +525,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7481502A2BBAE51800C2EDB5 /* HomeView.swift in Sources */,
-				74B9865C2BBACC510072E8F1 /* ContentView.swift in Sources */,
 				74B9865A2BBACC510072E8F1 /* WhitePandaApp.swift in Sources */,
 				7481502C2BBAE52B00C2EDB5 /* HomeReducer.swift in Sources */,
 			);

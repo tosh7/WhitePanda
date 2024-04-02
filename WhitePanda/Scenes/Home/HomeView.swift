@@ -6,13 +6,32 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct HomeView: View {
+
+    let store: StoreOf<Home>
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Welcome to Golf Counter")
+
+            Button("Create New Round", action: {
+                store.send(.createNewRound)
+            })
+
+            Button("See past results", action: {
+                store.send(.seePastRound)
+            })
+        }
+
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(
+        store: Store(initialState: Home.State()) {
+            Home()
+        }
+    )
 }
