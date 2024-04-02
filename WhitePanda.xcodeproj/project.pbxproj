@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		748150262BBADA1400C2EDB5 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748150252BBADA1400C2EDB5 /* CounterReducer.swift */; };
+		7481502A2BBAE51800C2EDB5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748150292BBAE51800C2EDB5 /* HomeView.swift */; };
+		7481502C2BBAE52B00C2EDB5 /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481502B2BBAE52B00C2EDB5 /* HomeReducer.swift */; };
+		7481502F2BBAE61000C2EDB5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7481502E2BBAE61000C2EDB5 /* ComposableArchitecture */; };
 		74AD43302BBAD49400AA7F5E /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AD432F2BBAD49400AA7F5E /* CounterView.swift */; };
 		74B9865A2BBACC510072E8F1 /* WhitePandaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986592BBACC510072E8F1 /* WhitePandaApp.swift */; };
 		74B9865C2BBACC510072E8F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9865B2BBACC510072E8F1 /* ContentView.swift */; };
@@ -80,6 +83,8 @@
 
 /* Begin PBXFileReference section */
 		748150252BBADA1400C2EDB5 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		748150292BBAE51800C2EDB5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7481502B2BBAE52B00C2EDB5 /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
 		74AD432F2BBAD49400AA7F5E /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		74B986562BBACC510072E8F1 /* WhitePanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhitePanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B986592BBACC510072E8F1 /* WhitePandaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaApp.swift; sourceTree = "<group>"; };
@@ -107,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7481502F2BBAE61000C2EDB5 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +155,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		748150272BBAE4E600C2EDB5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				748150282BBAE50C00C2EDB5 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		748150282BBAE50C00C2EDB5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				748150292BBAE51800C2EDB5 /* HomeView.swift */,
+				7481502B2BBAE52B00C2EDB5 /* HomeReducer.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7481502D2BBAE61000C2EDB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74AD432D2BBAD47300AA7F5E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +206,7 @@
 				74B986912BBACC540072E8F1 /* WhitePanda Watch AppTests */,
 				74B9869B2BBACC540072E8F1 /* WhitePanda Watch AppUITests */,
 				74B986572BBACC510072E8F1 /* Products */,
+				7481502D2BBAE61000C2EDB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +228,7 @@
 			children = (
 				74B986592BBACC510072E8F1 /* WhitePandaApp.swift */,
 				74B9865B2BBACC510072E8F1 /* ContentView.swift */,
+				748150272BBAE4E600C2EDB5 /* Scenes */,
 				74B9865D2BBACC530072E8F1 /* Assets.xcassets */,
 				74B9865F2BBACC530072E8F1 /* Preview Content */,
 			);
@@ -282,6 +314,9 @@
 				74B9867F2BBACC530072E8F1 /* PBXTargetDependency */,
 			);
 			name = WhitePanda;
+			packageProductDependencies = (
+				7481502E2BBAE61000C2EDB5 /* ComposableArchitecture */,
+			);
 			productName = WhitePanda;
 			productReference = 74B986562BBACC510072E8F1 /* WhitePanda.app */;
 			productType = "com.apple.product-type.application";
@@ -492,8 +527,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7481502A2BBAE51800C2EDB5 /* HomeView.swift in Sources */,
 				74B9865C2BBACC510072E8F1 /* ContentView.swift in Sources */,
 				74B9865A2BBACC510072E8F1 /* WhitePandaApp.swift in Sources */,
+				7481502C2BBAE52B00C2EDB5 /* HomeReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,8 +800,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -796,8 +832,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1062,6 +1097,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7481502E2BBAE61000C2EDB5 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B986B52BBAD12C0072E8F1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
 		74B986B62BBAD12C0072E8F1 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 74B986B52BBAD12C0072E8F1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
