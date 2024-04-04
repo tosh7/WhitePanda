@@ -10,7 +10,7 @@ import ComposableArchitecture
 
 struct HomeView: View {
 
-    let store: StoreOf<Home>
+    @Bindable var store: StoreOf<Home>
 
     var body: some View {
         VStack {
@@ -24,7 +24,11 @@ struct HomeView: View {
                 store.send(.seePastRound)
             })
         }
-
+//        .sheet(item: $store.scope(state: , action: )) { _ in
+//            Nagvigation {
+//
+//            }
+//        }
     }
 }
 
