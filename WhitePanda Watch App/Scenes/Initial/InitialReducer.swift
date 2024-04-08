@@ -14,18 +14,21 @@ struct InitialFeature {
     @ObservableState
     struct State: Equatable {
         var watchConnecter: Connecter
-        @Presents var counterFeature: Counter.State?
+        @Presents var counterState: Counter.State?
     }
 
     enum Action {
-        case createFree
+        case createFreeButtonTapped
+        case createFree(PresentationAction<Counter.Action>)
     }
 
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
+            case .createFreeButtonTapped:
+                state.counterState = Counter.State()
+                return .none
             case .createFree:
-                state.counterFeature = Counter.State()
                 return .none
             }
         }

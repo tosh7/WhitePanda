@@ -12,9 +12,9 @@ import ComposableArchitecture
 struct WhitePanda_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            CounterView(
-                store: Store(initialState: Counter.State()) {
-                    Counter()
+            InitialView(
+                store: Store(initialState: InitialFeature.State(watchConnecter: .init())) {
+                    InitialFeature()
                 }
             )
         }

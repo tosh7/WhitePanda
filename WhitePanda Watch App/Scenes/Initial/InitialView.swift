@@ -6,13 +6,32 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct InitialView: View {
+
+    @Bindable var store: StoreOf<InitialFeature>
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("To start a new round,\n open your iPhone and set up!")
+                .multilineTextAlignment(.center)
+
+            Button(action: {
+                store.send(.createFreeButtonTapped)
+            }, label: {
+                Text("Or free count mode")
+            })
+        }.sheet(item: $store.scope(state: \.counterState, action: \.createFree), content: { store in
+            CounterView(store: store)
+        })
     }
 }
 
 #Preview {
-    InitialView()
+    InitialView(
+        store: Store(initialState: InitialFeature.State(watchConnecter: .init())) {
+            InitialFeature()
+        }
+    )
 }
