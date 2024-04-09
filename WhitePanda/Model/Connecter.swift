@@ -46,10 +46,6 @@ extension Connecter: WCSessionDelegate {
 extension Connecter {
     func gameOn() {
         let context: [String: Any] = ["isGameStarted": true]
-        do {
-            try session.updateApplicationContext(context)
-        } catch {
-            print("error: \(error.localizedDescription)")
-        }
+        session.sendMessage(context, replyHandler: { _ in })
     }
 }

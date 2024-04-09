@@ -35,11 +35,10 @@ extension Connecter: WCSessionDelegate {
         }
     }
 
-    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        print("========")
-        print(applicationContext)
-        if let isGmaeStarted = applicationContext["isGameStarted"] as? Bool {
-            print(isGmaeStarted)
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        print("========Message")
+        print(message)
+        if let isGmaeStarted = message["isGameStarted"] as? Bool {
             self.isGameStated = isGmaeStarted
         }
     }
