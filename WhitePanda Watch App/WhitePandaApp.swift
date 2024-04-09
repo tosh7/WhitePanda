@@ -13,7 +13,7 @@ struct WhitePanda_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             InitialView(
-                store: Store(initialState: InitialFeature.State(watchConnecter: .init())) {
+                store: Store(initialState: InitialFeature.State(watchConnecter: Connecter.shared)) {
                     InitialFeature()
                 }
             )
