@@ -31,7 +31,16 @@ extension Connecter: WCSessionDelegate {
         print("session: \(session)")
 
         if let error {
-            print(error.localizedDescription)
+            print("error: \(error.localizedDescription)")
+        }
+    }
+
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        print("========")
+        print(applicationContext)
+        if let isGmaeStarted = applicationContext["isGameStarted"] as? Bool {
+            print(isGmaeStarted)
+            self.isGameStated = isGmaeStarted
         }
     }
 }
