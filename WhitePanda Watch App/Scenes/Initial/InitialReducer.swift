@@ -32,5 +32,8 @@ struct InitialFeature {
                 return .none
             }
         }
+        .ifLet(\.$counterState, action: \.createFree) {
+            Counter()
+        }
     }
 }

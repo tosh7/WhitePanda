@@ -12,11 +12,13 @@ import ComposableArchitecture
 struct WhitePanda_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            InitialView(
-                store: Store(initialState: InitialFeature.State(watchConnecter: Connecter.shared)) {
-                    InitialFeature()
-                }
-            )
+            NavigationStack {
+                InitialView(
+                    store: Store(initialState: InitialFeature.State(watchConnecter: Connecter.shared)) {
+                        InitialFeature()
+                    }
+                )
+            }
         }
     }
 }

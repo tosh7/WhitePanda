@@ -10,11 +10,13 @@ import ComposableArchitecture
 
 struct CounterView: View {
 
-    let store: StoreOf<Counter>
+    @Bindable var store: StoreOf<Counter>
 
     var body: some View {
         VStack {
             Text("\(store.count)")
+                .font(.title)
+                .fontWeight(.semibold)
 
             Spacer()
 
@@ -23,6 +25,7 @@ struct CounterView: View {
                     store.send(.incrementButtonTapped)
                 }, label: {
                     Text("+")
+                        .font(.title2)
                 })
 
                 HStack {
@@ -30,6 +33,7 @@ struct CounterView: View {
                         store.send(.decrementButtonTapped)
                     }, label: {
                         Text("-")
+                            .font(.title3)
                     })
 
                     Button(action: {

@@ -22,7 +22,8 @@ struct InitialView: View {
             }, label: {
                 Text("Or free count mode")
             })
-        }.sheet(item: $store.scope(state: \.counterState, action: \.createFree), content: { store in
+        }
+        .navigationDestination(item: $store.scope(state: \.counterState, action: \.createFree), destination: { store in
             CounterView(store: store)
         })
     }
