@@ -13,7 +13,7 @@ struct Home {
 
     @ObservableState
     struct State: Equatable {
-        var connecter: Connecter
+        var connecter: iPhoneConnecter
     }
 
     enum Action {

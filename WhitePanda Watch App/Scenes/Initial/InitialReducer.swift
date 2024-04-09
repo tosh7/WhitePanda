@@ -13,7 +13,7 @@ struct InitialFeature {
 
     @ObservableState
     struct State: Equatable {
-        var watchConnecter: Connecter
+        var watchConnecter: WatchConnecter
         @Presents var counterState: Counter.State?
     }
 

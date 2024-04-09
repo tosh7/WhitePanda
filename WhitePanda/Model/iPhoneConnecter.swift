@@ -8,9 +8,9 @@
 import Foundation
 import WatchConnectivity
 
-final class Connecter: NSObject {
+final class iPhoneConnecter: NSObject {
 
-    static let shared: Connecter = .init()
+    static let shared: iPhoneConnecter = .init()
     private var session: WCSession!
 
     override init() {
@@ -24,7 +24,7 @@ final class Connecter: NSObject {
     }
 }
 
-extension Connecter: WCSessionDelegate {
+extension iPhoneConnecter: WCSessionDelegate {
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: (any Error)?) {
         func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
@@ -43,7 +43,7 @@ extension Connecter: WCSessionDelegate {
     }
 }
 
-extension Connecter {
+extension iPhoneConnecter {
     func gameOn() {
         let context: [String: Any] = ["isGameStarted": true]
         session.sendMessage(context, replyHandler: { _ in })

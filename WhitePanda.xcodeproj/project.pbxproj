@@ -13,8 +13,8 @@
 		7481502F2BBAE61000C2EDB5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7481502E2BBAE61000C2EDB5 /* ComposableArchitecture */; };
 		74A16D412BC4281600B77F84 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A16D402BC4281600B77F84 /* InitialView.swift */; };
 		74A16D432BC4282C00B77F84 /* InitialReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A16D422BC4282C00B77F84 /* InitialReducer.swift */; };
-		74A16D462BC4309C00B77F84 /* Connecter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A16D452BC4309C00B77F84 /* Connecter.swift */; };
-		74A16D492BC5082C00B77F84 /* Connecter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A16D482BC5082C00B77F84 /* Connecter.swift */; };
+		74A16D462BC4309C00B77F84 /* WatchConnecter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A16D452BC4309C00B77F84 /* WatchConnecter.swift */; };
+		74A16D492BC5082C00B77F84 /* iPhoneConnecter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A16D482BC5082C00B77F84 /* iPhoneConnecter.swift */; };
 		74AD43302BBAD49400AA7F5E /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AD432F2BBAD49400AA7F5E /* CounterView.swift */; };
 		74B9865A2BBACC510072E8F1 /* WhitePandaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986592BBACC510072E8F1 /* WhitePandaApp.swift */; };
 		74B9865E2BBACC530072E8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B9865D2BBACC530072E8F1 /* Assets.xcassets */; };
@@ -90,8 +90,8 @@
 		7481502B2BBAE52B00C2EDB5 /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
 		74A16D402BC4281600B77F84 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		74A16D422BC4282C00B77F84 /* InitialReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialReducer.swift; sourceTree = "<group>"; };
-		74A16D452BC4309C00B77F84 /* Connecter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connecter.swift; sourceTree = "<group>"; };
-		74A16D482BC5082C00B77F84 /* Connecter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connecter.swift; sourceTree = "<group>"; };
+		74A16D452BC4309C00B77F84 /* WatchConnecter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnecter.swift; sourceTree = "<group>"; };
+		74A16D482BC5082C00B77F84 /* iPhoneConnecter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneConnecter.swift; sourceTree = "<group>"; };
 		74AD432F2BBAD49400AA7F5E /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		74B986562BBACC510072E8F1 /* WhitePanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhitePanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B986592BBACC510072E8F1 /* WhitePandaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePandaApp.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 		74A16D442BC4308D00B77F84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				74A16D452BC4309C00B77F84 /* Connecter.swift */,
+				74A16D452BC4309C00B77F84 /* WatchConnecter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 		74A16D472BC5081900B77F84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				74A16D482BC5082C00B77F84 /* Connecter.swift */,
+				74A16D482BC5082C00B77F84 /* iPhoneConnecter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -563,7 +563,7 @@
 				7481502A2BBAE51800C2EDB5 /* HomeView.swift in Sources */,
 				74B9865A2BBACC510072E8F1 /* WhitePandaApp.swift in Sources */,
 				7481502C2BBAE52B00C2EDB5 /* HomeReducer.swift in Sources */,
-				74A16D492BC5082C00B77F84 /* Connecter.swift in Sources */,
+				74A16D492BC5082C00B77F84 /* iPhoneConnecter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +591,7 @@
 				74A16D432BC4282C00B77F84 /* InitialReducer.swift in Sources */,
 				74B986822BBACC530072E8F1 /* WhitePandaApp.swift in Sources */,
 				74A16D412BC4281600B77F84 /* InitialView.swift in Sources */,
-				74A16D462BC4309C00B77F84 /* Connecter.swift in Sources */,
+				74A16D462BC4309C00B77F84 /* WatchConnecter.swift in Sources */,
 				748150262BBADA1400C2EDB5 /* CounterReducer.swift in Sources */,
 				74AD43302BBAD49400AA7F5E /* CounterView.swift in Sources */,
 			);

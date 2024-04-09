@@ -34,7 +34,7 @@ struct HomeView: View {
 
 #Preview {
     HomeView(
-        store: Store(initialState: Home.State(connecter: Connecter.shared)) {
+        store: Store(initialState: Home.State(connecter: iPhoneConnecter.shared)) {
             Home()
         }
     )

@@ -8,9 +8,9 @@
 import Foundation
 import WatchConnectivity
 
-final class Connecter: NSObject {
+final class WatchConnecter: NSObject {
 
-    static let shared: Connecter = .init()
+    static let shared: WatchConnecter = .init()
 
     var isGameStated: Bool = false
 
@@ -25,7 +25,7 @@ final class Connecter: NSObject {
     }
 }
 
-extension Connecter: WCSessionDelegate {
+extension WatchConnecter: WCSessionDelegate {
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         print("session: \(session)")
