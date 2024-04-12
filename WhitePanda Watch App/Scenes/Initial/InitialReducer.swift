@@ -13,14 +13,18 @@ struct InitialFeature {
 
     @ObservableState
     struct State: Equatable {
-        var watchConnecter: WatchConnecter
         @Presents var counterState: Counter.State?
     }
 
     enum Action {
         case createFreeButtonTapped
         case createFree(PresentationAction<Counter.Action>)
+        case recivedGameStart
+        case roundStart(PresentationAction<Counter.Action>)
+        case onAppear
     }
+
+    var watchConnecter: WatchConnecter
 
     var body: some Reducer<State, Action> {
         Reduce { state, action in
@@ -30,9 +34,23 @@ struct InitialFeature {
                 return .none
             case .createFree:
                 return .none
+            case .recivedGameStart:
+                state.counterState = Counter.State()
+                return .none
+            case .roundStart:
+                return .none
+            case .onAppear:
+                return .run { send in
+                    for await _ in self.watchConnecter.isGmaeStartedStream {
+                        await send(.recivedGameStart)
+                    }
+                }
             }
         }
         .ifLet(\.$counterState, action: \.createFree) {
+            Counter()
+        }
+        .ifLet(\.$counterState, action: \.roundStart) {
             Counter()
         }
     }

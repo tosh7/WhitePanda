@@ -14,8 +14,8 @@ struct WhitePanda_Watch_AppApp: App {
         WindowGroup {
             NavigationStack {
                 InitialView(
-                    store: Store(initialState: InitialFeature.State(watchConnecter: WatchConnecter.shared)) {
-                        InitialFeature()
+                    store: Store(initialState: InitialFeature.State()) {
+                        InitialFeature(watchConnecter: WatchConnecter.shared)
                     }
                 )
             }

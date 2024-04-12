@@ -26,13 +26,16 @@ struct InitialView: View {
         .navigationDestination(item: $store.scope(state: \.counterState, action: \.createFree), destination: { store in
             CounterView(store: store)
         })
+        .onAppear {
+            store.send(.onAppear)
+        }
     }
 }
 
 #Preview {
     InitialView(
-        store: Store(initialState: InitialFeature.State(watchConnecter: .init())) {
-            InitialFeature()
+        store: Store(initialState: InitialFeature.State()) {
+            InitialFeature(watchConnecter: .init())
         }
     )
 }
