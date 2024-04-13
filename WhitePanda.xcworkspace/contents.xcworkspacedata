@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CommonModel">
+   </FileRef>
+   <FileRef
       location = "group:WhitePanda.xcodeproj">
    </FileRef>
 </Workspace>

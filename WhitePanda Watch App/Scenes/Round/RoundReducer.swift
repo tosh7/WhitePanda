@@ -7,6 +7,7 @@
 
 import Foundation
 import ComposableArchitecture
+import Model
 
 @Reducer
 struct RoundFeature {
@@ -54,10 +55,4 @@ struct RoundFeature {
             }
         }
     }
-}
-
-
-enum RoundType: Int {
-    case half = 9
-    case full = 18
 }
