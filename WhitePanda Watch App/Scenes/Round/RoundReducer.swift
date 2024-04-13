@@ -44,8 +44,10 @@ struct RoundFeature {
                 state.count = 0
                 return .none
             case .goNextButtonTapped:
+                state.roundCount += 1
                 return .none
             case .goPreviousButtonTapped:
+                state.roundCount -= 1
                 return .none
             case .resultScene:
                 return .none

@@ -6,13 +6,65 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct RoundView: View {
+    @Bindable var store: StoreOf<RoundFeature>
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("\(store.count)")
+                .font(.title)
+                .fontWeight(.semibold)
+
+            Spacer()
+
+            VStack {
+                Button(action: {
+                    store.send(.incrementButtonTapped)
+                }, label: {
+                    Text("+")
+                        .font(.title2)
+                })
+
+                HStack {
+                    Button(action: {
+                        store.send(.decrementButtonTapped)
+                    }, label: {
+                        Text("-")
+                            .font(.title3)
+                    })
+
+                    Button(action: {
+                        store.send(.resetButtonTapped)
+                    }, label: {
+                        Text("Reset")
+                    })
+                }
+
+                HStack {
+                    if store.roundCount > 1 {
+                        Button(action: {
+                            store.send(.goPreviousButtonTapped)
+                        }, label: {
+                            Text("Back")
+                        })
+                    }
+
+                    Button(action: {
+                        store.send(.goNextButtonTapped)
+                    }, label: {
+                        Text(store.type.rawValue == store.roundCount ? "Finish" : "Next")
+                    })
+                }
+            }
+        }
+
     }
 }
 
 #Preview {
-    RoundView()
+    RoundView(store: .init(initialState: RoundFeature.State(type: .full), reducer: {
+        RoundFeature()
+    }))
 }
