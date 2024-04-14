@@ -171,12 +171,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		19090A292BCBB51D00B6439B /* View */ = {
+		19090A292BCBB51D00B6439B /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				19090A2A2BCBB53000B6439B /* BlurView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		748150272BBAE4E600C2EDB5 /* Scenes */ = {
@@ -212,20 +212,20 @@
 			path = Initial;
 			sourceTree = "<group>";
 		};
-		74A16D442BC4308D00B77F84 /* Model */ = {
+		74A16D442BC4308D00B77F84 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				74A16D452BC4309C00B77F84 /* WatchConnecter.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		74A16D472BC5081900B77F84 /* Model */ = {
+		74A16D472BC5081900B77F84 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				74A16D482BC5082C00B77F84 /* iPhoneConnecter.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		74AD432D2BBAD47300AA7F5E /* Scenes */ = {
@@ -279,8 +279,8 @@
 			children = (
 				74B986592BBACC510072E8F1 /* WhitePandaApp.swift */,
 				748150272BBAE4E600C2EDB5 /* Scenes */,
-				74A16D472BC5081900B77F84 /* Model */,
-				19090A292BCBB51D00B6439B /* View */,
+				74A16D472BC5081900B77F84 /* Models */,
+				19090A292BCBB51D00B6439B /* Views */,
 				74B9865D2BBACC530072E8F1 /* Assets.xcassets */,
 				74B9865F2BBACC530072E8F1 /* Preview Content */,
 			);
@@ -317,7 +317,7 @@
 			children = (
 				74B986812BBACC530072E8F1 /* WhitePandaApp.swift */,
 				74AD432D2BBAD47300AA7F5E /* Scenes */,
-				74A16D442BC4308D00B77F84 /* Model */,
+				74A16D442BC4308D00B77F84 /* Models */,
 				74B986852BBACC540072E8F1 /* Assets.xcassets */,
 				74B986872BBACC540072E8F1 /* Preview Content */,
 			);
