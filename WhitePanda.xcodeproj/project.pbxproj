@@ -10,6 +10,10 @@
 		19090A262BCA301B00B6439B /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = 19090A252BCA301B00B6439B /* Model */; };
 		19090A282BCA303600B6439B /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = 19090A272BCA303600B6439B /* Model */; };
 		19090A2B2BCBB53000B6439B /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A2A2BCBB53000B6439B /* BlurView.swift */; };
+		19090A2F2BCBCF2200B6439B /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A2E2BCBCF2200B6439B /* ResultView.swift */; };
+		19090A312BCBCF3700B6439B /* PastResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A302BCBCF3700B6439B /* PastResultsView.swift */; };
+		19090A332BCBCF6900B6439B /* PastResultsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A322BCBCF6900B6439B /* PastResultsReducer.swift */; };
+		19090A352BCBCF8400B6439B /* ResultReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A342BCBCF8400B6439B /* ResultReducer.swift */; };
 		748150262BBADA1400C2EDB5 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748150252BBADA1400C2EDB5 /* CounterReducer.swift */; };
 		7481502A2BBAE51800C2EDB5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748150292BBAE51800C2EDB5 /* HomeView.swift */; };
 		7481502C2BBAE52B00C2EDB5 /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481502B2BBAE52B00C2EDB5 /* HomeReducer.swift */; };
@@ -91,6 +95,10 @@
 
 /* Begin PBXFileReference section */
 		19090A2A2BCBB53000B6439B /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		19090A2E2BCBCF2200B6439B /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		19090A302BCBCF3700B6439B /* PastResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastResultsView.swift; sourceTree = "<group>"; };
+		19090A322BCBCF6900B6439B /* PastResultsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastResultsReducer.swift; sourceTree = "<group>"; };
+		19090A342BCBCF8400B6439B /* ResultReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultReducer.swift; sourceTree = "<group>"; };
 		748150252BBADA1400C2EDB5 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		748150292BBAE51800C2EDB5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7481502B2BBAE52B00C2EDB5 /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
@@ -179,10 +187,30 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		19090A2C2BCBCEF100B6439B /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				19090A2E2BCBCF2200B6439B /* ResultView.swift */,
+				19090A342BCBCF8400B6439B /* ResultReducer.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		19090A2D2BCBCEFC00B6439B /* PastResults */ = {
+			isa = PBXGroup;
+			children = (
+				19090A302BCBCF3700B6439B /* PastResultsView.swift */,
+				19090A322BCBCF6900B6439B /* PastResultsReducer.swift */,
+			);
+			path = PastResults;
+			sourceTree = "<group>";
+		};
 		748150272BBAE4E600C2EDB5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				748150282BBAE50C00C2EDB5 /* Home */,
+				19090A2C2BCBCEF100B6439B /* Result */,
+				19090A2D2BCBCEFC00B6439B /* PastResults */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -593,10 +621,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7481502A2BBAE51800C2EDB5 /* HomeView.swift in Sources */,
+				19090A312BCBCF3700B6439B /* PastResultsView.swift in Sources */,
 				74B9865A2BBACC510072E8F1 /* WhitePandaApp.swift in Sources */,
 				19090A2B2BCBB53000B6439B /* BlurView.swift in Sources */,
+				19090A352BCBCF8400B6439B /* ResultReducer.swift in Sources */,
 				7481502C2BBAE52B00C2EDB5 /* HomeReducer.swift in Sources */,
+				19090A332BCBCF6900B6439B /* PastResultsReducer.swift in Sources */,
 				74A16D492BC5082C00B77F84 /* iPhoneConnecter.swift in Sources */,
+				19090A2F2BCBCF2200B6439B /* ResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

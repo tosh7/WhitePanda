@@ -44,11 +44,16 @@ struct HomeView: View {
             }
         }
         .alert($store.scope(state: \.alert, action: \.alert))
-        //        .sheet(item: $store.scope(state: , action: )) { _ in
-        //            Nagvigation {
-        //
-        //            }
-        //        }
+        .navigationDestination(
+            item: $store.scope(state: \.pastResultsState, action: \.goPastResults),
+            destination: { store in
+                PastResultView(store: store)
+            })
+        .navigationDestination(
+            item: $store.scope(state: \.resultState, action: \.goResult),
+            destination: { store in
+                ResultView(store: store)
+            })
     }
 }
 

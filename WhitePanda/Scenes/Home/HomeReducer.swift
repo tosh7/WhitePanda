@@ -15,6 +15,8 @@ struct Home {
     struct State: Equatable {
         var isLoading: Bool = false
         @Presents var alert: AlertState<Action.Alert>?
+        @Presents var pastResultsState: PastResultsReducer.State?
+        @Presents var resultState: ResultReducer.State?
     }
 
     enum Action {
@@ -23,7 +25,10 @@ struct Home {
         case successConnection
         case failureConnection
         case establishingConnection
+        // For transion
         case alert(PresentationAction<Alert>)
+        case goPastResults(PresentationAction<PastResultsReducer.Action>)
+        case goResult(PresentationAction<ResultReducer.Action>)
 
         enum Alert: Equatable {}
     }
@@ -45,10 +50,12 @@ struct Home {
                     }
                 }
             case .seePastRound:
+                state.pastResultsState = PastResultsReducer.State()
                 return .none
             case .successConnection:
                 print("successConnection")
                 state.isLoading = false
+                state.resultState = ResultReducer.State()
                 return .none
             case .failureConnection:
                 print("failureConnection")
@@ -65,10 +72,20 @@ struct Home {
                 print("establishingConnection")
                 state.isLoading = true
                 return .none
+            case .goPastResults:
+                return .none
+            case .goResult:
+                return .none
             case .alert:
                 return .none
             }
         }
         .ifLet(\.$alert, action: \.alert)
+        .ifLet(\.$pastResultsState, action: \.goPastResults) {
+            PastResultsReducer()
+        }
+        .ifLet(\.$resultState, action: \.goResult) {
+            ResultReducer()
+        }
     }
 }

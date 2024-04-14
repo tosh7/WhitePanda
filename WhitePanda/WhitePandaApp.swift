@@ -12,11 +12,13 @@ import ComposableArchitecture
 struct WhitePandaApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView(
-                store: Store(initialState: Home.State()) {
-                    Home(connecter: iPhoneConnecter.shared)
-                }
-            )
+            NavigationStack {
+                HomeView(
+                    store: Store(initialState: Home.State()) {
+                        Home(connecter: iPhoneConnecter.shared)
+                    }
+                )
+            }
         }
     }
 }
