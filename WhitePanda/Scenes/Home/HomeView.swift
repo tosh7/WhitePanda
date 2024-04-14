@@ -43,6 +43,7 @@ struct HomeView: View {
                 }
             }
         }
+        .alert($store.scope(state: \.alert, action: \.alert))
         //        .sheet(item: $store.scope(state: , action: )) { _ in
         //            Nagvigation {
         //

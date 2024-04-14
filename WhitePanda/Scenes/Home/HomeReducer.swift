@@ -14,6 +14,7 @@ struct Home {
     @ObservableState
     struct State: Equatable {
         var isLoading: Bool = false
+        @Presents var alert: AlertState<Action.Alert>?
     }
 
     enum Action {
@@ -22,6 +23,9 @@ struct Home {
         case successConnection
         case failureConnection
         case establishingConnection
+        case alert(PresentationAction<Alert>)
+
+        enum Alert: Equatable {}
     }
 
     var connecter: iPhoneConnecter
@@ -49,12 +53,22 @@ struct Home {
             case .failureConnection:
                 print("failureConnection")
                 state.isLoading = false
+                state.alert = AlertState {
+                    TextState("Connection Failed!\nMake sure WhitePanda App is opened on your Apple Watch")
+                } actions: {
+                    ButtonState(role: .cancel)  {
+                        TextState("Close")
+                      }
+                }
                 return .none
             case .establishingConnection:
                 print("establishingConnection")
                 state.isLoading = true
                 return .none
+            case .alert:
+                return .none
             }
         }
+        .ifLet(\.$alert, action: \.alert)
     }
 }
