@@ -7,6 +7,7 @@
 
 import Foundation
 import WatchConnectivity
+import Model
 
 final class iPhoneConnecter: NSObject {
 
@@ -44,8 +45,8 @@ extension iPhoneConnecter: WCSessionDelegate {
 }
 
 extension iPhoneConnecter {
-    func gameOn() {
+    func gameOn() async throws -> [String: Any] {
         let context: [String: Any] = ["isGameStarted": true]
-        session.sendMessage(context, replyHandler: { _ in })
+        return try await session.sendMessageWithValidation(message: context)
     }
 }

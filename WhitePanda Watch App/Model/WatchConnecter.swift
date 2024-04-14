@@ -45,6 +45,7 @@ extension WatchConnecter: WCSessionDelegate {
         print(message)
         if let isGmaeStarted = message["isGameStarted"] as? Bool {
             isGmaeStartedContinuation?.yield(isGmaeStarted)
+            replyHandler(["GameStarted": true])
         }
     }
 }

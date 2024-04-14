@@ -12,22 +12,42 @@ import ComposableArchitecture
 struct Home {
 
     @ObservableState
-    struct State: Equatable {
-        var connecter: iPhoneConnecter
-    }
+    struct State: Equatable {}
 
     enum Action {
         case createNewRound
         case seePastRound
+        case successConnection
+        case failureConnection
+        case establishingConnection
     }
+
+    var connecter: iPhoneConnecter
 
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
             case .createNewRound:
-                state.connecter.gameOn()
-                return .none
+                return .run { send in
+                    await send(.establishingConnection)
+                    do {
+                        try await _ = connecter.gameOn()
+                        await send(.successConnection)
+                    } catch let error {
+                        print(error)
+                        await send(.failureConnection)
+                    }
+                }
             case .seePastRound:
+                return .none
+            case .successConnection:
+                print("successConnection")
+                return .none
+            case .failureConnection:
+                print("failureConnection")
+                return .none
+            case .establishingConnection:
+                print("establishingConnection")
                 return .none
             }
         }

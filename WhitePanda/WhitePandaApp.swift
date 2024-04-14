@@ -13,8 +13,8 @@ struct WhitePandaApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView(
-                store: Store(initialState: Home.State(connecter: iPhoneConnecter.shared)) {
-                    Home()
+                store: Store(initialState: Home.State()) {
+                    Home(connecter: iPhoneConnecter.shared)
                 }
             )
         }
