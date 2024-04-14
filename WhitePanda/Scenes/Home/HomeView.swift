@@ -13,22 +13,41 @@ struct HomeView: View {
     @Bindable var store: StoreOf<Home>
 
     var body: some View {
-        VStack {
-            Text("Welcome to Golf Counter")
+        ZStack {
+            VStack {
+                Text("Welcome to Golf Counter")
 
-            Button("Create New Round", action: {
-                store.send(.createNewRound)
-            })
+                Button("Create New Round", action: {
+                    store.send(.createNewRound)
+                })
 
-            Button("See past results", action: {
-                store.send(.seePastRound)
-            })
+                Button("See past results", action: {
+                    store.send(.seePastRound)
+                })
+            }
+
+            if store.isLoading {
+                BlurView(style: .dark)
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+                    ProgressView()
+                        .progressViewStyle(.circular)
+                        .padding()
+                        .tint(Color.white)
+                        .scaleEffect(1.2)
+
+                    Text("Hold On!\nConnecting to your Apple Watch")
+                        .foregroundColor(.pink)
+                        .bold()
+                        .multilineTextAlignment(.center)
+                }
+            }
         }
-//        .sheet(item: $store.scope(state: , action: )) { _ in
-//            Nagvigation {
-//
-//            }
-//        }
+        //        .sheet(item: $store.scope(state: , action: )) { _ in
+        //            Nagvigation {
+        //
+        //            }
+        //        }
     }
 }
 

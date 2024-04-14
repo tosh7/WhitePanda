@@ -12,7 +12,9 @@ import ComposableArchitecture
 struct Home {
 
     @ObservableState
-    struct State: Equatable {}
+    struct State: Equatable {
+        var isLoading: Bool = false
+    }
 
     enum Action {
         case createNewRound
@@ -42,12 +44,15 @@ struct Home {
                 return .none
             case .successConnection:
                 print("successConnection")
+                state.isLoading = false
                 return .none
             case .failureConnection:
                 print("failureConnection")
+                state.isLoading = false
                 return .none
             case .establishingConnection:
                 print("establishingConnection")
+                state.isLoading = true
                 return .none
             }
         }

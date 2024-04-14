@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		19090A262BCA301B00B6439B /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = 19090A252BCA301B00B6439B /* Model */; };
 		19090A282BCA303600B6439B /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = 19090A272BCA303600B6439B /* Model */; };
+		19090A2B2BCBB53000B6439B /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A2A2BCBB53000B6439B /* BlurView.swift */; };
 		748150262BBADA1400C2EDB5 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748150252BBADA1400C2EDB5 /* CounterReducer.swift */; };
 		7481502A2BBAE51800C2EDB5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748150292BBAE51800C2EDB5 /* HomeView.swift */; };
 		7481502C2BBAE52B00C2EDB5 /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481502B2BBAE52B00C2EDB5 /* HomeReducer.swift */; };
@@ -89,6 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19090A2A2BCBB53000B6439B /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		748150252BBADA1400C2EDB5 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		748150292BBAE51800C2EDB5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7481502B2BBAE52B00C2EDB5 /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
@@ -169,6 +171,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19090A292BCBB51D00B6439B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19090A2A2BCBB53000B6439B /* BlurView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		748150272BBAE4E600C2EDB5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +280,7 @@
 				74B986592BBACC510072E8F1 /* WhitePandaApp.swift */,
 				748150272BBAE4E600C2EDB5 /* Scenes */,
 				74A16D472BC5081900B77F84 /* Model */,
+				19090A292BCBB51D00B6439B /* View */,
 				74B9865D2BBACC530072E8F1 /* Assets.xcassets */,
 				74B9865F2BBACC530072E8F1 /* Preview Content */,
 			);
@@ -583,6 +594,7 @@
 			files = (
 				7481502A2BBAE51800C2EDB5 /* HomeView.swift in Sources */,
 				74B9865A2BBACC510072E8F1 /* WhitePandaApp.swift in Sources */,
+				19090A2B2BCBB53000B6439B /* BlurView.swift in Sources */,
 				7481502C2BBAE52B00C2EDB5 /* HomeReducer.swift in Sources */,
 				74A16D492BC5082C00B77F84 /* iPhoneConnecter.swift in Sources */,
 			);
