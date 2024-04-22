@@ -7,10 +7,10 @@
 
 import Foundation
 
-public final class RoundModel {
-    var type: RoundType
-    var counts: [CountModel] = []
-    var totalScore: Int {
+public final class RoundModel: NSObject {
+    public let type: RoundType
+    public var counts: [CountModel] = []
+    public var totalScore: Int {
         return counts.reduce(0) {
             $0 + $1.count
         }

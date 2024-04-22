@@ -51,9 +51,9 @@ extension WatchConnecter: WCSessionDelegate {
 }
 
 extension WatchConnecter {
-    func sendScore(context: [String: Any]) throws {
+    func sendScore(context: [String: Any]) {
         do {
             try session.updateApplicationContext(context)
-        }
+        } catch {}
     }
 }

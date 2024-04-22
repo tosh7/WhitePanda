@@ -54,7 +54,7 @@ struct RoundView: View {
                     Button(action: {
                         store.send(.goNextButtonTapped)
                     }, label: {
-                        Text(store.type.rawValue == store.roundCount ? "Finish" : "Next")
+                        Text(store.round.type.rawValue == store.roundCount ? "Finish" : "Next")
                     })
                 }
             }
@@ -64,7 +64,7 @@ struct RoundView: View {
 }
 
 #Preview {
-    RoundView(store: .init(initialState: RoundFeature.State(type: .full), reducer: {
-        RoundFeature()
+    RoundView(store: .init(initialState: RoundFeature.State(round: .init(type: .full)), reducer: {
+        RoundFeature(connecter: WatchConnecter.shared)
     }))
 }

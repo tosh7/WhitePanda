@@ -16,7 +16,7 @@ struct RoundFeature {
     struct State: Equatable {
         var count: Int = 0
         var roundCount: Int = 1
-        var type: RoundType
+        var round: Model.RoundModel
     }
 
     enum Action {
@@ -26,9 +26,12 @@ struct RoundFeature {
         case resetButtonTapped
         case goNextButtonTapped
         case goPreviousButtonTapped
+
         // transitions
         case resultScene
     }
+
+    let connecter: WatchConnecter
 
     var body: some Reducer<State, Action> {
         Reduce { state, action in
@@ -45,6 +48,9 @@ struct RoundFeature {
                 state.count = 0
                 return .none
             case .goNextButtonTapped:
+                state.round.counts.append(.init(count: state.count))
+                connecter.sendScore(context: ["round": state.round])
+                state.count = 0
                 state.roundCount += 1
                 return .none
             case .goPreviousButtonTapped:
