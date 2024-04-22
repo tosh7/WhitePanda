@@ -11,6 +11,7 @@ import WatchConnectivity
 final class WatchConnecter: NSObject {
 
     static let shared: WatchConnecter = .init()
+    private let session: WCSession
 
     private var isGmaeStartedContinuation: AsyncStream<Bool>.Continuation?
     var isGmaeStartedStream: AsyncStream<Bool> {
@@ -20,13 +21,12 @@ final class WatchConnecter: NSObject {
     }
 
     override init() {
+        self.session = WCSession.default
         super.init()
 
-        if WCSession.isSupported() {
-            let session = WCSession.default
-            session.delegate = self
-            session.activate()
-        }
+        // No need to check isSupported, shince any watchOS always returns true
+        session.delegate = self
+        session.activate()
     }
 }
 
@@ -46,6 +46,14 @@ extension WatchConnecter: WCSessionDelegate {
         if let isGmaeStarted = message["isGameStarted"] as? Bool {
             isGmaeStartedContinuation?.yield(isGmaeStarted)
             replyHandler(["GameStarted": true])
+        }
+    }
+}
+
+extension WatchConnecter {
+    func sendScore(context: [String: Any]) throws {
+        do {
+            try session.updateApplicationContext(context)
         }
     }
 }
