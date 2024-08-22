@@ -26,6 +26,9 @@ struct InitialView: View {
         .navigationDestination(item: $store.scope(state: \.counterState, action: \.createFree), destination: { store in
             CounterView(store: store)
         })
+        .navigationDestination(item: $store.scope(state: \.roundState, action: \.roundStart), destination: { store in
+            RoundView(store: store)
+        })
         .onAppear {
             store.send(.onAppear)
         }

@@ -14,13 +14,14 @@ struct InitialFeature {
     @ObservableState
     struct State: Equatable {
         @Presents var counterState: Counter.State?
+        @Presents var roundState: RoundFeature.State?
     }
 
     enum Action {
         case createFreeButtonTapped
         case createFree(PresentationAction<Counter.Action>)
         case recivedGameStart
-        case roundStart(PresentationAction<Counter.Action>)
+        case roundStart(PresentationAction<RoundFeature.Action>)
         case onAppear
     }
 
@@ -35,7 +36,7 @@ struct InitialFeature {
             case .createFree:
                 return .none
             case .recivedGameStart:
-                state.counterState = Counter.State()
+                state.roundState = RoundFeature.State()
                 return .none
             case .roundStart:
                 return .none
@@ -50,8 +51,8 @@ struct InitialFeature {
         .ifLet(\.$counterState, action: \.createFree) {
             Counter()
         }
-        .ifLet(\.$counterState, action: \.roundStart) {
-            Counter()
+        .ifLet(\.$roundState, action: \.roundStart) {
+            RoundFeature(connecter: watchConnecter)
         }
     }
 }

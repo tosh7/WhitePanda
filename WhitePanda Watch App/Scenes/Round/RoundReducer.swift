@@ -16,7 +16,7 @@ struct RoundFeature {
     struct State: Equatable {
         var count: Int = 0
         var roundCount: Int = 1
-        var round: Model.RoundModel
+        var round: Model.RoundModel = .init(type: .full)
     }
 
     enum Action {
