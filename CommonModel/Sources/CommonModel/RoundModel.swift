@@ -9,12 +9,12 @@ import Foundation
 
 public final class RoundModel: NSObject {
     public let type: RoundType
-    public var counts: [CountModel] = []
-    public var totalScore: Int {
-        return counts.reduce(0) {
-            $0 + $1.count
-        }
-    }
+    public var counts: [Int: Int] = [:]
+//    public var totalScore: Int {
+//        return counts.reduce(0) {
+//            $0 + $1.count
+//        }
+//    }
 
     public init(type: RoundType) {
         self.type = type
