@@ -12,54 +12,59 @@ struct RoundView: View {
     @Bindable var store: StoreOf<RoundFeature>
 
     var body: some View {
-        VStack {
-            Text("\(store.count)")
-                .font(.title)
-                .fontWeight(.semibold)
-
-            Spacer()
-
+        ScrollView {
             VStack {
-                Button(action: {
-                    store.send(.incrementButtonTapped)
-                }, label: {
-                    Text("+")
-                        .font(.title2)
-                })
+                Text("Hole: \(store.roundCount)")
+                    .font(.title3)
+                    .fontWeight(.regular)
 
-                HStack {
+                Text("\(store.count)")
+                    .font(.title)
+                    .fontWeight(.semibold)
+
+                Spacer()
+
+                VStack {
                     Button(action: {
-                        store.send(.decrementButtonTapped)
+                        store.send(.incrementButtonTapped)
                     }, label: {
-                        Text("-")
-                            .font(.title3)
+                        Text("+")
+                            .font(.title2)
                     })
 
-                    Button(action: {
-                        store.send(.resetButtonTapped)
-                    }, label: {
-                        Text("Reset")
-                    })
-                }
+                    HStack {
+                        if store.roundCount > 1 {
+                            Button(action: {
+                                store.send(.goPreviousButtonTapped)
+                            }, label: {
+                                Text("Back")
+                            })
+                        }
 
-                HStack {
-                    if store.roundCount > 1 {
                         Button(action: {
-                            store.send(.goPreviousButtonTapped)
+                            store.send(.goNextButtonTapped)
                         }, label: {
-                            Text("Back")
+                            Text(store.round.type.rawValue == store.roundCount ? "Finish" : "Next")
                         })
                     }
 
-                    Button(action: {
-                        store.send(.goNextButtonTapped)
-                    }, label: {
-                        Text(store.round.type.rawValue == store.roundCount ? "Finish" : "Next")
-                    })
+                    HStack {
+                        Button(action: {
+                            store.send(.decrementButtonTapped)
+                        }, label: {
+                            Text("-")
+                                .font(.title3)
+                        })
+
+                        Button(action: {
+                            store.send(.resetButtonTapped)
+                        }, label: {
+                            Text("Reset")
+                        })
+                    }
                 }
             }
         }
-
     }
 }
 
