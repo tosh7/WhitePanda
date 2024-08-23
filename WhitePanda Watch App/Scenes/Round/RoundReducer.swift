@@ -49,7 +49,7 @@ struct RoundFeature {
                 return .none
             case .goNextButtonTapped:
                 state.round.counts[state.roundCount] = state.count
-                connecter.sendScore(context: ["round": state.round])
+                connecter.sendScore(context: ["round": state.round.counts])
                 state.roundCount += 1
                 state.count = state.round.counts[state.roundCount] ?? 0
                 return .none

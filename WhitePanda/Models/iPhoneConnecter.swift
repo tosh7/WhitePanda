@@ -14,6 +14,13 @@ final class iPhoneConnecter: NSObject {
     static let shared: iPhoneConnecter = .init()
     private var session: WCSession!
 
+    private var roundDataContinuation: AsyncStream<[Int: Int]>.Continuation?
+    var roundDataStream: AsyncStream<[Int: Int]> {
+        AsyncStream { continuation in
+            self.roundDataContinuation = continuation
+        }
+    }
+
     override init() {
         super.init()
 
@@ -34,6 +41,14 @@ extension iPhoneConnecter: WCSessionDelegate {
             if let error {
                 print("error: \(error.localizedDescription)")
             }
+        }
+    }
+
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        print("========iPhone Message")
+        print(message)
+        if let roundModel = message["round"] as? [Int: Int] {
+            roundDataContinuation?.yield(roundModel)
         }
     }
 

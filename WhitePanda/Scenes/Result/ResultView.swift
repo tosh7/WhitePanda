@@ -13,14 +13,17 @@ struct ResultView: View {
     @Bindable var store: StoreOf<ResultReducer>
 
     var body: some View {
-        Text("You can see the result")
+        Text("You can see the result \( store.data?[1])")
+            .onAppear {
+                store.send(.onAppear)
+            }
     }
 }
 
 #Preview {
     ResultView(
         store: Store(initialState: ResultReducer.State()) {
-            ResultReducer()
+            ResultReducer(connecter: iPhoneConnecter.shared)
         }
     )
 }

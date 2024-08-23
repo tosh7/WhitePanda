@@ -85,7 +85,7 @@ struct Home {
             PastResultsReducer()
         }
         .ifLet(\.$resultState, action: \.goResult) {
-            ResultReducer()
+            ResultReducer(connecter: connecter)
         }
     }
 }

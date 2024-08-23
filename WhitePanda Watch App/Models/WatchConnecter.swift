@@ -24,7 +24,7 @@ final class WatchConnecter: NSObject {
         self.session = WCSession.default
         super.init()
 
-        // No need to check isSupported, shince any watchOS always returns true
+        // No need to check isSupported, since any watchOS always returns true
         session.delegate = self
         session.activate()
     }
@@ -52,8 +52,14 @@ extension WatchConnecter: WCSessionDelegate {
 
 extension WatchConnecter {
     func sendScore(context: [String: Any]) {
-        do {
-            try session.updateApplicationContext(context)
-        } catch {}
+        Task {
+            do {
+                print("send")
+                _ = try await session.sendMessageWithValidation(message: context)
+            } catch let error {
+                print("fail")
+                print(error)
+            }
+        }
     }
 }
