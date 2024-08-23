@@ -13,7 +13,7 @@ struct ResultView: View {
     @Bindable var store: StoreOf<ResultReducer>
 
     var body: some View {
-        Text("You can see the result \( store.data?[1])")
+        ResultListView(result: store.data)
             .onAppear {
                 store.send(.onAppear)
             }
