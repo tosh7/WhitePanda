@@ -41,13 +41,13 @@ struct RoundView: View {
                             })
                         }
 
-                        if store.round.type.rawValue == store.roundCount {
-                            Button(action: {
-                                store.send(.goNextButtonTapped)
-                            }, label: {
-                                Text("Finish")
-                            })
-                        } else {
+                        if store.round.type.rawValue != store.roundCount {
+//                            Button(action: {
+//                                store.send(.goNextButtonTapped)
+//                            }, label: {
+//                                Text("Finish")
+//                            })
+//                        } else {
                             Button(action: {
                                 store.send(.goNextButtonTapped)
                             }, label: {
