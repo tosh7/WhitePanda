@@ -41,11 +41,19 @@ struct RoundView: View {
                             })
                         }
 
-                        Button(action: {
-                            store.send(.goNextButtonTapped)
-                        }, label: {
-                            Text(store.round.type.rawValue == store.roundCount ? "Finish" : "Next")
-                        })
+                        if store.round.type.rawValue == store.roundCount {
+                            Button(action: {
+                                store.send(.goNextButtonTapped)
+                            }, label: {
+                                Text("Finish")
+                            })
+                        } else {
+                            Button(action: {
+                                store.send(.goNextButtonTapped)
+                            }, label: {
+                                Text("Next")
+                            })
+                        }
                     }
 
                     HStack {
@@ -65,6 +73,7 @@ struct RoundView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
