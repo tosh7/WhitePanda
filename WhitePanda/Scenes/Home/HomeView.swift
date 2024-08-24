@@ -14,16 +14,26 @@ struct HomeView: View {
 
     var body: some View {
         ZStack {
-            VStack {
+            Color(.systemGroupedBackground)
+                .edgesIgnoringSafeArea(.all)
+
+            VStack(spacing: 20) {
                 Text("Welcome to Golf Counter")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding(.bottom, 30)
 
-                Button("Create New Round", action: {
+                Button("Create New Round") {
                     store.send(.createNewRound)
-                })
+                }
+                .buttonStyle(FilledButtonStyle())
+                .padding(.horizontal, 20)
 
-                Button("See past results", action: {
+                Button("See Past Results") {
                     store.send(.seePastRound)
-                })
+                }
+                .buttonStyle(FilledButtonStyle())
+                .padding(.horizontal, 20)
             }
 
             if store.isLoading {
@@ -40,6 +50,9 @@ struct HomeView: View {
                         .foregroundColor(.pink)
                         .bold()
                         .multilineTextAlignment(.center)
+                        .padding()
+                        .background(Color.black.opacity(0.7))
+                        .cornerRadius(10)
                 }
             }
         }

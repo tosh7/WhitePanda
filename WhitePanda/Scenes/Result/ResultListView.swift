@@ -30,8 +30,26 @@ struct ResultListView: View {
 
     var body: some View {
         List(list) { item in
-            Text("Hole \(item.hole): \(item.score)")
+            HStack {
+                Text("Hole \(item.hole)")
+                    .font(.headline)
+                    .foregroundColor(.blue)
+                    .padding(.leading, 20)
+                Spacer()
+                Text("\(item.score)")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .foregroundColor(item.score <= 5 ? .green : .red)
+                    .padding(.trailing, 20)
+            }
+            .padding(.vertical, 10)
+            .background(Color(.systemGray6))
+            .cornerRadius(8)
+            .shadow(color: .gray.opacity(0.3), radius: 4, x: 0, y: 2)
         }
+        .listStyle(InsetGroupedListStyle())
+        .navigationTitle("Results")
+        .background(Color(.systemGroupedBackground).edgesIgnoringSafeArea(.all))
     }
 }
 
