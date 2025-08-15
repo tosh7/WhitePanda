@@ -48,7 +48,7 @@ WhitePanda/
 
 - Xcode 15.3.0 or later
 - iOS 17.0+
-- watchOS 6.0+
+- watchOS 10.0+
 - Swift 5.10+
 
 ## Installation
@@ -63,3 +63,11 @@ WhitePanda/
 2. **Apple Watch**: The companion app will automatically sync and provide score tracking functionality
 3. **During Play**: Use the Apple Watch app to quickly increment scores for each hole
 4. **After Play**: Review your completed round and total score on either device
+
+## Version
+
+Current version: 0.1.0
+
+## License
+
+Private repository - All rights reserved
