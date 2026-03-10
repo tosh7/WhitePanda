@@ -6,19 +6,18 @@
 //
 
 import SwiftUI
-import ComposableArchitecture
 
 struct RoundView: View {
-    @Bindable var store: StoreOf<RoundFeature>
+    @State var viewModel = RoundViewModel()
 
     var body: some View {
         ScrollView {
             VStack {
-                Text("Hole: \(store.roundCount)")
+                Text("Hole: \(viewModel.roundCount)")
                     .font(.title3)
                     .fontWeight(.regular)
 
-                Text("\(store.count)")
+                Text("\(viewModel.count)")
                     .font(.title)
                     .fontWeight(.semibold)
 
@@ -26,30 +25,30 @@ struct RoundView: View {
 
                 VStack {
                     Button(action: {
-                        store.send(.incrementButtonTapped)
+                        viewModel.increment()
                     }, label: {
                         Text("+")
                             .font(.title2)
                     })
 
                     HStack {
-                        if store.roundCount > 1 {
+                        if viewModel.roundCount > 1 {
                             Button(action: {
-                                store.send(.goPreviousButtonTapped)
+                                viewModel.goPrevious()
                             }, label: {
                                 Text("Back")
                             })
                         }
 
-                        if store.round.type.rawValue != store.roundCount {
-//                            Button(action: {
-//                                store.send(.goNextButtonTapped)
-//                            }, label: {
-//                                Text("Finish")
-//                            })
-//                        } else {
+                        if viewModel.round.type.rawValue == viewModel.roundCount {
                             Button(action: {
-                                store.send(.goNextButtonTapped)
+                                viewModel.finish()
+                            }, label: {
+                                Text("Finish")
+                            })
+                        } else {
+                            Button(action: {
+                                viewModel.goNext()
                             }, label: {
                                 Text("Next")
                             })
@@ -58,14 +57,14 @@ struct RoundView: View {
 
                     HStack {
                         Button(action: {
-                            store.send(.decrementButtonTapped)
+                            viewModel.decrement()
                         }, label: {
                             Text("-")
                                 .font(.title3)
                         })
 
                         Button(action: {
-                            store.send(.resetButtonTapped)
+                            viewModel.reset()
                         }, label: {
                             Text("Reset")
                         })
@@ -78,7 +77,5 @@ struct RoundView: View {
 }
 
 #Preview {
-    RoundView(store: .init(initialState: RoundFeature.State(round: .init(type: .full)), reducer: {
-        RoundFeature(connecter: WatchConnecter.shared)
-    }))
+    RoundView()
 }

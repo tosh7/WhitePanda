@@ -6,18 +6,13 @@
 //
 
 import SwiftUI
-import ComposableArchitecture
 
 @main
 struct WhitePandaApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                HomeView(
-                    store: Store(initialState: Home.State()) {
-                        Home(connecter: iPhoneConnecter.shared)
-                    }
-                )
+                HomeView()
             }
         }
     }

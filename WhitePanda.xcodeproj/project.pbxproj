@@ -19,7 +19,7 @@
 		748150262BBADA1400C2EDB5 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748150252BBADA1400C2EDB5 /* CounterReducer.swift */; };
 		7481502A2BBAE51800C2EDB5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748150292BBAE51800C2EDB5 /* HomeView.swift */; };
 		7481502C2BBAE52B00C2EDB5 /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481502B2BBAE52B00C2EDB5 /* HomeReducer.swift */; };
-		7481502F2BBAE61000C2EDB5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7481502E2BBAE61000C2EDB5 /* ComposableArchitecture */; };
+
 		74A16D412BC4281600B77F84 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A16D402BC4281600B77F84 /* InitialView.swift */; };
 		74A16D432BC4282C00B77F84 /* InitialReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A16D422BC4282C00B77F84 /* InitialReducer.swift */; };
 		74A16D462BC4309C00B77F84 /* WatchConnecter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A16D452BC4309C00B77F84 /* WatchConnecter.swift */; };
@@ -38,7 +38,7 @@
 		74B986932BBACC540072E8F1 /* WhitePanda_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B986922BBACC540072E8F1 /* WhitePanda_Watch_AppTests.swift */; };
 		74B9869D2BBACC540072E8F1 /* WhitePanda_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9869C2BBACC540072E8F1 /* WhitePanda_Watch_AppUITests.swift */; };
 		74B9869F2BBACC540072E8F1 /* WhitePanda_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9869E2BBACC540072E8F1 /* WhitePanda_Watch_AppUITestsLaunchTests.swift */; };
-		74B986B72BBAD12C0072E8F1 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 74B986B62BBAD12C0072E8F1 /* ComposableArchitecture */; };
+
 		74ECC0062BC99BF900A41BB8 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ECC0052BC99BF900A41BB8 /* RoundView.swift */; };
 		74ECC0082BC99C3400A41BB8 /* RoundReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ECC0072BC99C3400A41BB8 /* RoundReducer.swift */; };
 /* End PBXBuildFile section */
@@ -139,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19090A262BCA301B00B6439B /* Model in Frameworks */,
-				7481502F2BBAE61000C2EDB5 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19090A282BCA303600B6439B /* Model in Frameworks */,
-				74B986B72BBAD12C0072E8F1 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +417,6 @@
 			);
 			name = WhitePanda;
 			packageProductDependencies = (
-				7481502E2BBAE61000C2EDB5 /* ComposableArchitecture */,
 				19090A252BCA301B00B6439B /* Model */,
 			);
 			productName = WhitePanda;
@@ -476,7 +473,6 @@
 			);
 			name = "WhitePanda Watch App";
 			packageProductDependencies = (
-				74B986B62BBAD12C0072E8F1 /* ComposableArchitecture */,
 				19090A272BCA303600B6439B /* Model */,
 			);
 			productName = "WhitePanda Watch App";
@@ -563,7 +559,6 @@
 			);
 			mainGroup = 74B9864D2BBACC510072E8F1;
 			packageReferences = (
-				74B986B52BBAD12C0072E8F1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				19090A242BCA301B00B6439B /* XCLocalSwiftPackageReference "CommonModel" */,
 			);
 			productRefGroup = 74B986572BBACC510072E8F1 /* Products */;
@@ -1226,14 +1221,6 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		74B986B52BBAD12C0072E8F1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.9.2;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1244,16 +1231,6 @@
 		19090A272BCA303600B6439B /* Model */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Model;
-		};
-		7481502E2BBAE61000C2EDB5 /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74B986B52BBAD12C0072E8F1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
-		};
-		74B986B62BBAD12C0072E8F1 /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74B986B52BBAD12C0072E8F1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

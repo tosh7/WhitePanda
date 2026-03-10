@@ -6,11 +6,10 @@
 //
 
 import SwiftUI
-import ComposableArchitecture
 
 struct HomeView: View {
 
-    @Bindable var store: StoreOf<Home>
+    @State var viewModel = HomeViewModel()
 
     var body: some View {
         ZStack {
@@ -24,19 +23,21 @@ struct HomeView: View {
                     .padding(.bottom, 30)
 
                 Button("Create New Round") {
-                    store.send(.createNewRound)
+                    Task {
+                        await viewModel.createNewRound()
+                    }
                 }
                 .buttonStyle(FilledButtonStyle())
                 .padding(.horizontal, 20)
 
                 Button("See Past Results") {
-                    store.send(.seePastRound)
+                    viewModel.seePastResults()
                 }
                 .buttonStyle(FilledButtonStyle())
                 .padding(.horizontal, 20)
             }
 
-            if store.isLoading {
+            if viewModel.isLoading {
                 BlurView(style: .dark)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
@@ -56,24 +57,22 @@ struct HomeView: View {
                 }
             }
         }
-        .alert($store.scope(state: \.alert, action: \.alert))
-        .navigationDestination(
-            item: $store.scope(state: \.pastResultsState, action: \.goPastResults),
-            destination: { store in
-                PastResultView(store: store)
-            })
-        .navigationDestination(
-            item: $store.scope(state: \.resultState, action: \.goResult),
-            destination: { store in
-                ResultView(store: store)
-            })
+        .alert("Error", isPresented: $viewModel.showAlert) {
+            Button("Close", role: .cancel) {}
+        } message: {
+            Text(viewModel.alertMessage)
+        }
+        .navigationDestination(isPresented: $viewModel.showPastResults) {
+            PastResultView()
+        }
+        .navigationDestination(isPresented: $viewModel.showResult) {
+            ResultView()
+        }
     }
 }
 
 #Preview {
-    HomeView(
-        store: Store(initialState: Home.State()) {
-            Home(connecter: iPhoneConnecter.shared)
-        }
-    )
+    NavigationStack {
+        HomeView()
+    }
 }

@@ -6,15 +6,14 @@
 //
 
 import SwiftUI
-import ComposableArchitecture
 
 struct CounterView: View {
 
-    @Bindable var store: StoreOf<Counter>
+    @State var viewModel = CounterViewModel()
 
     var body: some View {
         VStack {
-            Text("\(store.count)")
+            Text("\(viewModel.count)")
                 .font(.title)
                 .fontWeight(.semibold)
 
@@ -22,7 +21,7 @@ struct CounterView: View {
 
             VStack {
                 Button(action: {
-                    store.send(.incrementButtonTapped)
+                    viewModel.increment()
                 }, label: {
                     Text("+")
                         .font(.title2)
@@ -30,14 +29,14 @@ struct CounterView: View {
 
                 HStack {
                     Button(action: {
-                        store.send(.decrementButtonTapped)
+                        viewModel.decrement()
                     }, label: {
                         Text("-")
                             .font(.title3)
                     })
 
                     Button(action: {
-                        store.send(.resetButtonTapped)
+                        viewModel.reset()
                     }, label: {
                         Text("Reset")
                     })
@@ -49,8 +48,5 @@ struct CounterView: View {
 }
 
 #Preview {
-    CounterView(
-        store: Store(initialState: Counter.State()) {
-            Counter()
-        })
+    CounterView()
 }

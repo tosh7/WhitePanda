@@ -6,11 +6,8 @@
 //
 
 import SwiftUI
-import ComposableArchitecture
 
 struct PastResultView: View {
-
-    @Bindable var store: StoreOf<PastResultsReducer>
 
     var body: some View {
         Text("Sorry it's not available, please wait for update!")
@@ -18,9 +15,5 @@ struct PastResultView: View {
 }
 
 #Preview {
-    PastResultView(
-        store: Store(initialState: PastResultsReducer.State()) {
-            PastResultsReducer()
-        }
-    )
+    PastResultView()
 }

@@ -6,18 +6,13 @@
 //
 
 import SwiftUI
-import ComposableArchitecture
 
 @main
 struct WhitePanda_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                InitialView(
-                    store: Store(initialState: InitialFeature.State()) {
-                        InitialFeature(watchConnecter: WatchConnecter.shared)
-                    }
-                )
+                InitialView()
             }
         }
     }

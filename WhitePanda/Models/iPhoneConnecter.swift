@@ -15,13 +15,10 @@ final class iPhoneConnecter: NSObject {
     private var session: WCSession!
 
     private var roundDataContinuation: AsyncStream<[Int: Int]>.Continuation?
-    var roundDataStream: AsyncStream<[Int: Int]> {
-        AsyncStream { continuation in
-            self.roundDataContinuation = continuation
-        }
-    }
+    let roundDataStream: AsyncStream<[Int: Int]>
 
     override init() {
+        (roundDataStream, roundDataContinuation) = AsyncStream.makeStream(of: [Int: Int].self)
         super.init()
 
         if WCSession.isSupported() {
@@ -35,12 +32,10 @@ final class iPhoneConnecter: NSObject {
 extension iPhoneConnecter: WCSessionDelegate {
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: (any Error)?) {
-        func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-            print("session: \(session)")
+        print("session: \(session)")
 
-            if let error {
-                print("error: \(error.localizedDescription)")
-            }
+        if let error {
+            print("error: \(error.localizedDescription)")
         }
     }
 

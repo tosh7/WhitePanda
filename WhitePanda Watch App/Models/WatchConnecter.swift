@@ -13,12 +13,12 @@ final class WatchConnecter: NSObject {
     static let shared: WatchConnecter = .init()
     private let session: WCSession
 
-    private var isGmaeStartedContinuation: AsyncStream<Bool>.Continuation?
-    var isGmaeStartedStream: AsyncStream<Bool> {
+    private var isGameStartedContinuation: AsyncStream<Bool>.Continuation?
+    private(set) lazy var isGameStartedStream: AsyncStream<Bool> = {
         AsyncStream { continuation in
-            self.isGmaeStartedContinuation = continuation
+            self.isGameStartedContinuation = continuation
         }
-    }
+    }()
 
     override init() {
         self.session = WCSession.default
@@ -43,8 +43,8 @@ extension WatchConnecter: WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
         print("========Message")
         print(message)
-        if let isGmaeStarted = message["isGameStarted"] as? Bool {
-            isGmaeStartedContinuation?.yield(isGmaeStarted)
+        if let isGameStarted = message["isGameStarted"] as? Bool {
+            isGameStartedContinuation?.yield(isGameStarted)
             replyHandler(["GameStarted": true])
         }
     }
