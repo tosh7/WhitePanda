@@ -6,11 +6,10 @@
 //
 
 import SwiftUI
-import ComposableArchitecture
 
 struct InitialView: View {
 
-    @Bindable var store: StoreOf<InitialFeature>
+    @State var viewModel = InitialViewModel()
 
     var body: some View {
         VStack {
@@ -18,27 +17,25 @@ struct InitialView: View {
                 .multilineTextAlignment(.center)
 
             Button(action: {
-                store.send(.createFreeButtonTapped)
+                viewModel.createFreeButtonTapped()
             }, label: {
                 Text("Or free count mode")
             })
         }
-        .navigationDestination(item: $store.scope(state: \.counterState, action: \.createFree), destination: { store in
-            CounterView(store: store)
-        })
-        .navigationDestination(item: $store.scope(state: \.roundState, action: \.roundStart), destination: { store in
-            RoundView(store: store)
-        })
+        .navigationDestination(isPresented: $viewModel.showCounter) {
+            CounterView()
+        }
+        .navigationDestination(isPresented: $viewModel.showRound) {
+            RoundView()
+        }
         .onAppear {
-            store.send(.onAppear)
+            viewModel.onAppear()
         }
     }
 }
 
 #Preview {
-    InitialView(
-        store: Store(initialState: InitialFeature.State()) {
-            InitialFeature(watchConnecter: .init())
-        }
-    )
+    NavigationStack {
+        InitialView()
+    }
 }

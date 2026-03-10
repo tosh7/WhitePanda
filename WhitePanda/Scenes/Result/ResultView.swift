@@ -6,24 +6,19 @@
 //
 
 import SwiftUI
-import ComposableArchitecture
 
 struct ResultView: View {
 
-    @Bindable var store: StoreOf<ResultReducer>
+    @State var viewModel = ResultViewModel()
 
     var body: some View {
-        ResultListView(result: store.data)
-            .onAppear {
-                store.send(.onAppear)
+        ResultListView(result: viewModel.data)
+            .task {
+                await viewModel.startListening()
             }
     }
 }
 
 #Preview {
-    ResultView(
-        store: Store(initialState: ResultReducer.State()) {
-            ResultReducer(connecter: iPhoneConnecter.shared)
-        }
-    )
+    ResultView()
 }

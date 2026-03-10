@@ -1,31 +1,28 @@
 //
-//  File.swift
-//  
+//  RoundModel.swift
+//
 //
 //  Created by Satoshi Komatsu on 2024/04/13.
 //
 
 import Foundation
 
-public final class RoundModel: NSObject {
+public struct RoundModel: Equatable {
     public let type: RoundType
     public var counts: [Int: Int] = [:]
-//    public var totalScore: Int {
-//        return counts.reduce(0) {
-//            $0 + $1.count
-//        }
-//    }
+    public var totalScore: Int {
+        counts.values.reduce(0, +)
+    }
 
     public init(type: RoundType) {
         self.type = type
     }
 }
 
-// FIXME: This cound be replaced with Int, but use struct just for further updates
+// FIXME: This could be replaced with Int, but use struct just for further updates
 public struct CountModel: Equatable, Identifiable {
     public var id: UUID = UUID()
-    var count: Int
-//    var per: Int
+    public var count: Int
 
     public init(count: Int) {
         self.count = count
